@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alexander Atelier | Portfolio</title>
+  <meta name="description" content="A premium multi-page portfolio for writing, apps, posters, and photography.">
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script defer src="assets/js/site.js"></script>
+</head>
+<body data-page="home">
+  <div class="ambient ambient--one" aria-hidden="true"></div>
+  <div class="ambient ambient--two" aria-hidden="true"></div>
+  <div class="ambient ambient--three" aria-hidden="true"></div>
+  <div class="page-transition" id="page-transition" aria-hidden="true"><span>Portfolio</span></div>
+  <div class="progress-bar" id="progress-bar" aria-hidden="true"></div>
+  <div class="cursor-dot" id="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" id="cursor-ring" aria-hidden="true"></div>
+
+  <header class="site-header" id="site-header">
+    <div class="shell site-header__inner">
+      <a class="brand" href="index.html" data-transition-label="Home">
+        <span class="brand__monogram">A</span>
+        <span class="brand__text">
+          <span class="brand__name">Alexander Atelier</span>
+          <span class="brand__label">Writing / Design / Product</span>
+        </span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="index.html" data-nav="home">Home</a>
+        <a href="writing.html" data-nav="writing">Writing</a>
+        <a href="apps.html" data-nav="apps">Apps</a>
+        <a href="posters.html" data-nav="posters">Posters</a>
+        <a href="photography.html" data-nav="photography">Photography</a>
+        <a href="contact.html" data-nav="contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-shell">
+    <section class="hero hero--home">
+      <div class="shell hero__grid">
+        <div class="hero__copy">
+          <div class="eyebrow" data-reveal>Portfolio 2026 / Built for a competitive market</div>
+          <h1 class="hero__title">
+            <span class="hero__title-line">Classical taste,</span>
+            <span class="hero__title-line">modern motion,</span>
+            <span class="hero__title-line">work built to last.</span>
+          </h1>
+          <p class="hero__lede" data-reveal style="--delay: 120ms;">
+            This landing page blends the editorial calm of the strongest source files with a sharper, more cinematic presentation. The result is a GitHub-ready portfolio with dedicated pages for writing, apps, posters, photography, and contact.
+          </p>
+          <div class="button-row hero__actions" data-reveal style="--delay: 180ms;">
+            <a class="button button--primary" href="writing.html" data-transition-label="Writing">Enter the library</a>
+            <a class="button button--ghost" href="contact.html" data-transition-label="Contact">Start a project</a>
+          </div>
+          <div class="hero__meta" data-reveal style="--delay: 240ms;">
+            <div class="stat-chip">
+              <strong>5 dedicated pages</strong>
+              <span>Each section has its own destination.</span>
+            </div>
+            <div class="stat-chip">
+              <strong>Shared transitions</strong>
+              <span>Cursor, page fades, reveals, and book handoff.</span>
+            </div>
+            <div class="stat-chip">
+              <strong>Pure static build</strong>
+              <span>No framework required for GitHub upload.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__salon" data-reveal style="--delay: 160ms;">
+          <div class="hero-card hero-card--folio">
+            <div class="eyebrow">Salon note</div>
+            <h2>Books, posters, products, and image-making under one visual language.</h2>
+            <p>The premium atmosphere comes from the luxury single-page draft, but the content is now divided into pages that feel intentional and easier to browse.</p>
+          </div>
+          <div class="hero-sculpture" aria-hidden="true">
+            <div class="hero-sculpture__frame">
+              <div class="hero-sculpture__arch"></div>
+              <div class="hero-sculpture__stack">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+          </div>
+          <div class="hero-card hero-card--brief">
+            <div class="eyebrow">Current focus</div>
+            <h3>Hover a book on the shelf.</h3>
+            <p>Each title animates out of the shelf and opens directly into its matching writing section on the next page.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="shell">
+        <div class="bookshelf-stage" data-reveal>
+          <div class="bookshelf__intro">
+            <div>
+              <div class="section-head__eyebrow">Featured writing</div>
+              <h2 class="section-head__title">A bookshelf that actually behaves like one.</h2>
+            </div>
+            <p>These books start as upright volumes on the home page, then hand off into their matching long-form sections on the writing page. The interaction is built to feel polished without needing a JavaScript framework.</p>
+          </div>
+
+          <div class="bookshelf__rack">
+            <div class="bookshelf__books" aria-label="Featured books">
+              <a class="shelf-book theme-ember" href="writing.html?book=weight-of-margins#weight-of-margins" data-book-link data-book-slug="weight-of-margins" data-book-title="The Weight of Margins" data-book-meta="Design Theory">
+                <span class="shelf-book__hint">Open chapter</span>
+                <span class="shelf-book__shadow" aria-hidden="true"></span>
+                <span class="shelf-book__body">
+                  <span class="shelf-book__spine">
+                    <span class="shelf-book__spine-label">The Weight of Margins</span>
+                    <span class="shelf-book__spine-meta">Theory</span>
+                  </span>
+                  <span class="shelf-book__face">
+                    <span class="shelf-book__genre">Design theory</span>
+                    <span class="shelf-book__title">The Weight of Margins</span>
+                    <span class="shelf-book__cta">Open chapter</span>
+                  </span>
+                  <span class="shelf-book__edge" aria-hidden="true"></span>
+                </span>
+              </a>
+
+              <a class="shelf-book theme-azure" href="writing.html?book=atlas-of-quiet-cities#atlas-of-quiet-cities" data-book-link data-book-slug="atlas-of-quiet-cities" data-book-title="Atlas of Quiet Cities" data-book-meta="Architecture and Culture">
+                <span class="shelf-book__hint">Open chapter</span>
+                <span class="shelf-book__shadow" aria-hidden="true"></span>
+                <span class="shelf-book__body">
+                  <span class="shelf-book__spine">
+                    <span class="shelf-book__spine-label">Atlas of Quiet Cities</span>
+                    <span class="shelf-book__spine-meta">Essays</span>
+                  </span>
+                  <span class="shelf-book__face">
+                    <span class="shelf-book__genre">Architecture</span>
+                    <span class="shelf-book__title">Atlas of Quiet Cities</span>
+                    <span class="shelf-book__cta">Open chapter</span>
+                  </span>
+                  <span class="shelf-book__edge" aria-hidden="true"></span>
+                </span>
+              </a>
+
+              <a class="shelf-book theme-plum" href="writing.html?book=signals-and-noise#signals-and-noise" data-book-link data-book-slug="signals-and-noise" data-book-title="Signals and Noise" data-book-meta="Technology and Society">
+                <span class="shelf-book__hint">Open chapter</span>
+                <span class="shelf-book__shadow" aria-hidden="true"></span>
+                <span class="shelf-book__body">
+                  <span class="shelf-book__spine">
+                    <span class="shelf-book__spine-label">Signals and Noise</span>
+                    <span class="shelf-book__spine-meta">Culture</span>
+                  </span>
+                  <span class="shelf-book__face">
+                    <span class="shelf-book__genre">Tech and society</span>
+                    <span class="shelf-book__title">Signals and Noise</span>
+                    <span class="shelf-book__cta">Open chapter</span>
+                  </span>
+                  <span class="shelf-book__edge" aria-hidden="true"></span>
+                </span>
+              </a>
+            </div>
+            <div class="bookshelf__beam" aria-hidden="true"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="shell">
+        <div class="section-head">
+          <div>
+            <div class="section-head__eyebrow">Section pages</div>
+            <h2 class="section-head__title">Every discipline gets its own stage.</h2>
+          </div>
+          <p class="section-head__intro">Instead of cramming everything onto one page, the site now uses the best ideas from the originals to create dedicated destinations for each part of the portfolio.</p>
+        </div>
+
+        <div class="preview-grid">
+          <a class="preview-card" href="writing.html" data-reveal style="--delay: 0ms;" data-transition-label="Writing">
+            <div class="preview-card__art art-writing" aria-hidden="true"></div>
+            <div class="eyebrow">Writing</div>
+            <h3 class="preview-card__title">Long-form book sections with motion-led entry.</h3>
+            <p class="preview-card__copy">A dedicated writing page with chapter navigation, selected-book spotlight, and in-page detail sections for each title.</p>
+            <span class="preview-card__link">Open writing page</span>
+          </a>
+
+          <a class="preview-card" href="apps.html" data-reveal style="--delay: 80ms;" data-transition-label="Apps">
+            <div class="preview-card__art art-apps" aria-hidden="true"></div>
+            <div class="eyebrow">Apps</div>
+            <h3 class="preview-card__title">Product work arranged like a premium app showroom.</h3>
+            <p class="preview-card__copy">Device mockups, feature stacks, and visual hierarchy borrowed from the strongest product layouts in the source files.</p>
+            <span class="preview-card__link">Open apps page</span>
+          </a>
+
+          <a class="preview-card" href="posters.html" data-reveal style="--delay: 160ms;" data-transition-label="Posters">
+            <div class="preview-card__art art-posters" aria-hidden="true"></div>
+            <div class="eyebrow">Posters</div>
+            <h3 class="preview-card__title">Graphic studies with stronger editorial rhythm.</h3>
+            <p class="preview-card__copy">Poster work gets a dedicated wall instead of a small teaser, with bold art panels and cleaner project framing.</p>
+            <span class="preview-card__link">Open posters page</span>
+          </a>
+
+          <a class="preview-card" href="photography.html" data-reveal style="--delay: 240ms;" data-transition-label="Photography">
+            <div class="preview-card__art art-photo" aria-hidden="true"></div>
+            <div class="eyebrow">Photography</div>
+            <h3 class="preview-card__title">Still image work with room for mood.</h3>
+            <p class="preview-card__copy">The photography page keeps the cinematic mood from the luxury concept but gives the gallery enough breathing room to feel confident.</p>
+            <span class="preview-card__link">Open photography page</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="shell section-lead">
+        <div class="info-panel" data-reveal>
+          <div class="section-head__eyebrow">Design direction</div>
+          <h2 class="section-head__title">Cohesive, not collaged.</h2>
+          <p>The site keeps the strongest ingredients from your source files: luxury ambience, glassy header behavior, scroll-based reveals, expressive typography, premium product mockups, and the seamless book transition concept. They now all live inside one consistent visual system instead of fighting each other.</p>
+        </div>
+        <div class="metric-panel" data-reveal style="--delay: 120ms;">
+          <div class="section-head__eyebrow">Why it feels stronger</div>
+          <span class="metric-panel__value">Multi-page clarity</span>
+          <p>Visitors can browse writing, apps, posters, and photography without losing the atmosphere of the home page. That usually reads as more premium than a single overloaded scroll.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell site-footer__inner">
+      <span>Alexander Atelier / Static portfolio ready for GitHub Pages</span>
+      <div class="site-footer__links">
+        <a href="writing.html">Writing</a>
+        <a href="apps.html">Apps</a>
+        <a href="posters.html">Posters</a>
+        <a href="photography.html">Photography</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
