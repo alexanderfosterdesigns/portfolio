@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dancing on Jupiter | Portfolio</title>
+  <meta name="description" content="Book page for Dancing on Jupiter.">
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollTrigger.min.js"></script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script defer src="assets/js/site.js"></script>
+</head>
+<body data-page="writing" data-book-slug="dancing-on-jupiter">
+  <div class="noise" aria-hidden="true"></div>
+  <div class="ambient ambient--one" aria-hidden="true"></div>
+  <div class="ambient ambient--two" aria-hidden="true"></div>
+  <div class="ambient ambient--three" aria-hidden="true"></div>
+  <div class="page-transition" id="page-transition" aria-hidden="true"><span>Dancing on Jupiter</span></div>
+  <div class="progress-line" id="progress-line" aria-hidden="true"></div>
+  <div class="cursor-dot" id="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" id="cursor-ring" aria-hidden="true"></div>
+  <div class="cursor-blob" id="cursor-blob" aria-hidden="true"></div>
+
+  <header class="site-header" id="site-header">
+    <div class="shell site-header__inner">
+      <a class="brand" href="index.html" data-transition-label="Home">
+        <span class="brand__monogram">CV</span>
+        <span class="brand__text">
+          <span class="brand__name">Portfolio</span>
+          <span class="brand__label">Books / Apps / Tasmania</span>
+        </span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="writing.html" data-nav="writing">Writing</a>
+        <a href="apps.html" data-nav="apps">Apps</a>
+        <a href="photography.html" data-nav="photography">Photography</a>
+        <a href="prints.html" data-nav="prints">Prints</a>
+        <a href="contact.html" data-nav="contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-shell">
+    <section class="page-hero">
+      <div class="shell book-detail-hero__grid">
+        <div>
+          <div class="page-hero__header">
+            <div>
+              <div class="section-head__kicker" data-reveal>Book page / one</div>
+              <h1 class="book-detail-hero__title" data-reveal>Dancing on Jupiter</h1>
+            </div>
+          </div>
+          <p class="page-hero__copy" data-reveal>This page treats the book like a proper feature rather than a portfolio afterthought. The direction here is more celestial and high-tension: movement, orbit, distance, and the feeling of trying to hold onto something while everything keeps accelerating.</p>
+          <div class="tag-row" data-reveal>
+            <span class="tag">Book One</span>
+            <span class="tag">Dark sci-fi energy</span>
+            <span class="tag">Standalone destination</span>
+          </div>
+        </div>
+        <div class="theme-jupiter">
+          <div class="book-detail-hero__cover theme-jupiter" data-book-arrival data-reveal>
+            <small>Book One</small>
+            <div class="book-detail-hero__cover-title">Dancing on Jupiter</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="marquee-band">
+      <div class="marquee-track">
+        <span><b>DANCING ON JUPITER</b> ORBIT / MOTION / DISTANCE / VELOCITY</span>
+        <span><b>DANCING ON JUPITER</b> ORBIT / MOTION / DISTANCE / VELOCITY</span>
+      </div>
+    </div>
+
+    <section class="section">
+      <div class="shell detail-grid">
+        <div class="detail-panel" data-reveal>
+          <strong>Premise</strong>
+          <p>A book built around emotional gravity: attraction, drift, distance, and the impossible feeling of trying to stay grounded while your life keeps moving faster than your body can process.</p>
+        </div>
+        <div class="detail-panel" data-reveal>
+          <strong>Atmosphere</strong>
+          <p>Cold light, lift-off energy, loneliness, and the weird beauty of watching relationships behave like weather systems in space.</p>
+        </div>
+        <div class="detail-panel" data-reveal>
+          <strong>Why it matters here</strong>
+          <p>It gives the writing side of the portfolio a sharper, more cinematic identity and pairs naturally with the dark interactive design language of the site.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="shell section-lead">
+        <div class="detail-panel" data-reveal>
+          <div class="section-head__kicker">Excerpt tone</div>
+          <div class="quote-panel">"Some nights it felt less like falling in love and more like entering an orbit you were never built to leave."</div>
+        </div>
+        <div class="detail-panel" data-reveal>
+          <div class="section-head__kicker">Positioning inside the portfolio</div>
+          <p>This page is designed to sell the book as part of a wider creative practice. It sits alongside the apps and photography without shrinking to the level of a simple description card.</p>
+          <div class="tag-row">
+            <a class="button button--ghost" href="summer-of-06.html" data-transition-label="The Summer of 06">Next book</a>
+            <a class="button button--primary" href="writing.html" data-transition-label="Writing">Back to writing</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell site-footer__inner">
+      <span>Dancing on Jupiter / dedicated book page</span>
+      <div class="site-footer__links">
+        <a href="writing.html">Writing</a>
+        <a href="summer-of-06.html">The Summer of 06</a>
+        <a href="apps.html">Apps</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photography | Portfolio</title>
+  <meta name="description" content="Tasmania photography and image-making with links to prints.">
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollTrigger.min.js"></script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script defer src="assets/js/site.js"></script>
+</head>
+<body data-page="photography">
+  <div class="noise" aria-hidden="true"></div>
+  <div class="ambient ambient--one" aria-hidden="true"></div>
+  <div class="ambient ambient--two" aria-hidden="true"></div>
+  <div class="ambient ambient--three" aria-hidden="true"></div>
+  <div class="page-transition" id="page-transition" aria-hidden="true"><span>Photography</span></div>
+  <div class="progress-line" id="progress-line" aria-hidden="true"></div>
+  <div class="cursor-dot" id="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" id="cursor-ring" aria-hidden="true"></div>
+  <div class="cursor-blob" id="cursor-blob" aria-hidden="true"></div>
+
+  <header class="site-header" id="site-header">
+    <div class="shell site-header__inner">
+      <a class="brand" href="index.html" data-transition-label="Home">
+        <span class="brand__monogram">CV</span>
+        <span class="brand__text">
+          <span class="brand__name">Portfolio</span>
+          <span class="brand__label">Books / Apps / Tasmania</span>
+        </span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="index.html" data-nav="home">Home</a>
+        <a href="writing.html" data-nav="writing">Writing</a>
+        <a href="apps.html" data-nav="apps">Apps</a>
+        <a href="photography.html" data-nav="photography">Photography</a>
+        <a href="prints.html" data-nav="prints">Prints</a>
+        <a href="contact.html" data-nav="contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-shell">
+    <section class="page-hero">
+      <div class="shell page-hero__grid">
+        <div>
+          <div class="page-hero__header">
+            <div>
+              <div class="section-head__kicker" data-reveal>Tasmania photography</div>
+              <h1 class="page-hero__title" data-reveal>Shot across Tasmania, then pushed toward print.</h1>
+            </div>
+          </div>
+          <p class="page-hero__copy" data-reveal>The photography is positioned here as part of the same dark, cinematic world as the books and apps. It is no longer a static gallery section. It now has enough space to feel like a real practice, with a direct path into the print side through VanVakarnee.</p>
+        </div>
+        <div class="panel" data-reveal>
+          <div class="micro-label">Locations and mood</div>
+          <div class="tag-row">
+            <span class="tag">Tasmania, Australia</span>
+            <span class="tag">Coast</span>
+            <span class="tag">Forest</span>
+            <span class="tag">Weather</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="marquee-band">
+      <div class="marquee-track">
+        <span><b>TASMANIA</b> COAST / FOREST / WEATHER / CITY AFTER RAIN</span>
+        <span><b>TASMANIA</b> COAST / FOREST / WEATHER / CITY AFTER RAIN</span>
+      </div>
+    </div>
+
+    <section class="section">
+      <div class="shell gallery-grid">
+        <article class="gallery-card gallery-card--wide" data-reveal data-tilt>
+          <div class="gallery-card__visual gallery-card__visual--storm"></div>
+          <div class="gallery-card__content">
+            <div class="section-head__kicker">Weather system</div>
+            <h2 class="gallery-card__title">Storm Light</h2>
+            <p class="gallery-card__copy">Tasmania under shifting cloud and pressure, framed as atmosphere rather than postcard scenery.</p>
+          </div>
+        </article>
+
+        <article class="gallery-card gallery-card--tall" data-reveal data-tilt>
+          <div class="gallery-card__visual gallery-card__visual--coast"></div>
+          <div class="gallery-card__content">
+            <div class="section-head__kicker">Coastline</div>
+            <h2 class="gallery-card__title">Cold Water Edge</h2>
+            <p class="gallery-card__copy">Dark coastal frames, sharp air, and a stronger sense of material texture.</p>
+          </div>
+        </article>
+
+        <article class="gallery-card gallery-card--tall" data-reveal data-tilt>
+          <div class="gallery-card__visual gallery-card__visual--forest"></div>
+          <div class="gallery-card__content">
+            <div class="section-head__kicker">Forest</div>
+            <h2 class="gallery-card__title">Wet Green Silence</h2>
+            <p class="gallery-card__copy">Tree lines, low light, and the slower visual density of inland Tasmania.</p>
+          </div>
+        </article>
+
+        <article class="gallery-card gallery-card--wide" data-reveal data-tilt>
+          <div class="gallery-card__visual gallery-card__visual--city"></div>
+          <div class="gallery-card__content">
+            <div class="section-head__kicker">City detail</div>
+            <h2 class="gallery-card__title">After Rain</h2>
+            <p class="gallery-card__copy">Urban Tasmania treated with the same cinematic restraint as the landscapes.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="shell section-lead">
+        <div class="detail-panel" data-reveal>
+          <div class="section-head__kicker">Next step</div>
+          <h2 class="panel-title">The photography feeds directly into the print store.</h2>
+          <p>Instead of treating the images as self-contained, the site now points naturally toward the print and product side through VanVakarnee. That makes the photography page feel more commercially useful and more complete.</p>
+        </div>
+        <div class="detail-panel" data-reveal>
+          <div class="section-head__kicker">Print path</div>
+          <div class="tag-row">
+            <a class="button button--primary" href="prints.html" data-transition-label="Prints">View prints page</a>
+            <a class="button button--ghost" href="https://vanvakarnee.com" target="_blank" rel="noreferrer">Visit VanVakarnee.com</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell site-footer__inner">
+      <span>Tasmania photography / print path via VanVakarnee</span>
+      <div class="site-footer__links">
+        <a href="prints.html">Prints</a>
+        <a href="writing.html">Writing</a>
+        <a href="apps.html">Apps</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

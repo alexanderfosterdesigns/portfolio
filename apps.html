@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apps | Portfolio</title>
+  <meta name="description" content="Apps page featuring VERVE, CHERIFLIX, and BOOKLI.">
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollTrigger.min.js"></script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script defer src="assets/js/site.js"></script>
+</head>
+<body data-page="apps">
+  <div class="noise" aria-hidden="true"></div>
+  <div class="ambient ambient--one" aria-hidden="true"></div>
+  <div class="ambient ambient--two" aria-hidden="true"></div>
+  <div class="ambient ambient--three" aria-hidden="true"></div>
+  <div class="page-transition" id="page-transition" aria-hidden="true"><span>Apps</span></div>
+  <div class="progress-line" id="progress-line" aria-hidden="true"></div>
+  <div class="cursor-dot" id="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" id="cursor-ring" aria-hidden="true"></div>
+  <div class="cursor-blob" id="cursor-blob" aria-hidden="true"></div>
+
+  <header class="site-header" id="site-header">
+    <div class="shell site-header__inner">
+      <a class="brand" href="index.html" data-transition-label="Home">
+        <span class="brand__monogram">CV</span>
+        <span class="brand__text">
+          <span class="brand__name">Portfolio</span>
+          <span class="brand__label">Books / Apps / Tasmania</span>
+        </span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="index.html" data-nav="home">Home</a>
+        <a href="writing.html" data-nav="writing">Writing</a>
+        <a href="apps.html" data-nav="apps">Apps</a>
+        <a href="photography.html" data-nav="photography">Photography</a>
+        <a href="prints.html" data-nav="prints">Prints</a>
+        <a href="contact.html" data-nav="contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-shell">
+    <section class="page-hero">
+      <div class="shell page-hero__grid">
+        <div>
+          <div class="page-hero__header">
+            <div>
+              <div class="section-head__kicker" data-reveal>Apps page</div>
+              <h1 class="page-hero__title" data-reveal>Three real apps, styled like launch pieces instead of placeholders.</h1>
+            </div>
+          </div>
+          <p class="page-hero__copy" data-reveal>This section is now built around the actual products: VERVE for local music, CHERIFLIX for streaming, and BOOKLI for AI-assisted writing and publishing. The page keeps the dark premium look but hits much harder visually than the earlier minimal version.</p>
+        </div>
+        <div class="panel" data-reveal>
+          <div class="micro-label">Stack highlights</div>
+          <div class="tag-row">
+            <span class="tag">Qobuz API</span>
+            <span class="tag">Deezer API</span>
+            <span class="tag">TMDB</span>
+            <span class="tag">Claude / ChatGPT workflow</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="marquee-band">
+      <div class="marquee-track">
+        <span><b>VERVE</b> LOCAL MUSIC <b>CHERIFLIX</b> STREAMING <b>BOOKLI</b> PUBLISHING TOOL</span>
+        <span><b>VERVE</b> LOCAL MUSIC <b>CHERIFLIX</b> STREAMING <b>BOOKLI</b> PUBLISHING TOOL</span>
+      </div>
+    </div>
+
+    <section class="section">
+      <div class="shell app-grid">
+        <article class="project-card" data-reveal data-tilt>
+          <div class="project-card__visual">
+            <div class="phone-mock">
+              <div class="phone-mock__screen screen-verve">
+                <div class="screen-ui">
+                  <div class="screen-ui__bar"></div>
+                  <div class="screen-ui__line mid"></div>
+                  <div class="screen-ui__line short"></div>
+                  <div class="screen-ui__chip">Local music / ad free</div>
+                  <div class="screen-ui__block"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="section-head__kicker">App one</div>
+            <h2 class="project-card__title">VERVE</h2>
+            <p class="project-card__copy">A local music app focused on ad-free streaming and downloads, built around Qobuz and Deezer APIs. The framing here treats it like a real premium product instead of just another concept mockup.</p>
+            <ul class="feature-list">
+              <li><strong>Ad-free listening</strong><span>Cleaner user experience and better focus on the music itself.</span></li>
+              <li><strong>Qobuz and Deezer integration</strong><span>Built around actual music-source APIs rather than generic placeholders.</span></li>
+              <li><strong>Download support</strong><span>Useful for offline listening and a stronger product story overall.</span></li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="project-card" data-reveal data-tilt>
+          <div class="project-card__visual">
+            <div class="phone-mock">
+              <div class="phone-mock__screen screen-cheriflix">
+                <div class="screen-ui">
+                  <div class="screen-ui__bar"></div>
+                  <div class="screen-ui__chip">TMDB powered</div>
+                  <div class="screen-ui__block"></div>
+                  <div class="screen-ui__line mid"></div>
+                  <div class="screen-ui__line short"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="section-head__kicker">App two</div>
+            <h2 class="project-card__title">CHERIFLIX</h2>
+            <p class="project-card__copy">A Netflix-like streaming app using streaming APIs and the TMDB database. The design leans into a more cinematic UI language to match the content-first nature of the app.</p>
+            <ul class="feature-list">
+              <li><strong>Streaming-first experience</strong><span>Built around browse, discover, and play as the core interaction loop.</span></li>
+              <li><strong>TMDB-backed discovery</strong><span>Uses real metadata to make the product feel more complete and believable.</span></li>
+              <li><strong>Premium dark interface</strong><span>The portfolio presentation reinforces the same mood the app itself needs.</span></li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="project-card" data-reveal data-tilt>
+          <div class="project-card__visual">
+            <div class="phone-mock">
+              <div class="phone-mock__screen screen-bookli">
+                <div class="screen-ui">
+                  <div class="screen-ui__bar"></div>
+                  <div class="screen-ui__chip">Highlight to fix</div>
+                  <div class="screen-ui__block"></div>
+                  <div class="screen-ui__line mid"></div>
+                  <div class="screen-ui__line short"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="section-head__kicker">App three</div>
+            <h2 class="project-card__title">BOOKLI</h2>
+            <p class="project-card__copy">A lighter, weirder, more modern alternative to Word. It lets users highlight text to get Claude or ChatGPT to repair or sharpen it, flags likely issues, and helps auto-format manuscripts for publishing.</p>
+            <ul class="feature-list">
+              <li><strong>Highlight-to-fix workflow</strong><span>Fast interaction for editing instead of bouncing between windows and tools.</span></li>
+              <li><strong>AI issue suggestions</strong><span>Pushes beyond spelling checks into structural and stylistic improvement.</span></li>
+              <li><strong>Publishing formatting</strong><span>Positions the app as a real tool for authors instead of a novelty editor.</span></li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell site-footer__inner">
+      <span>Apps page / VERVE, CHERIFLIX, BOOKLI</span>
+      <div class="site-footer__links">
+        <a href="writing.html">Writing</a>
+        <a href="photography.html">Photography</a>
+        <a href="prints.html">Prints</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

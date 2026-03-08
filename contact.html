@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Portfolio</title>
+  <meta name="description" content="Contact page for book, app, photography, and print enquiries.">
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollTrigger.min.js"></script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script defer src="assets/js/site.js"></script>
+</head>
+<body data-page="contact">
+  <div class="noise" aria-hidden="true"></div>
+  <div class="ambient ambient--one" aria-hidden="true"></div>
+  <div class="ambient ambient--two" aria-hidden="true"></div>
+  <div class="ambient ambient--three" aria-hidden="true"></div>
+  <div class="page-transition" id="page-transition" aria-hidden="true"><span>Contact</span></div>
+  <div class="progress-line" id="progress-line" aria-hidden="true"></div>
+  <div class="cursor-dot" id="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" id="cursor-ring" aria-hidden="true"></div>
+  <div class="cursor-blob" id="cursor-blob" aria-hidden="true"></div>
+
+  <header class="site-header" id="site-header">
+    <div class="shell site-header__inner">
+      <a class="brand" href="index.html" data-transition-label="Home">
+        <span class="brand__monogram">CV</span>
+        <span class="brand__text">
+          <span class="brand__name">Portfolio</span>
+          <span class="brand__label">Books / Apps / Tasmania</span>
+        </span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="index.html" data-nav="home">Home</a>
+        <a href="writing.html" data-nav="writing">Writing</a>
+        <a href="apps.html" data-nav="apps">Apps</a>
+        <a href="photography.html" data-nav="photography">Photography</a>
+        <a href="prints.html" data-nav="prints">Prints</a>
+        <a href="contact.html" data-nav="contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-shell">
+    <section class="page-hero">
+      <div class="shell page-hero__grid">
+        <div>
+          <div class="page-hero__header">
+            <div>
+              <div class="section-head__kicker" data-reveal>Contact and enquiries</div>
+              <h1 class="contact-title" data-reveal>Let's build the next chapter with the same level of drama.</h1>
+            </div>
+          </div>
+          <p class="page-hero__copy" data-reveal>This portfolio now brings together writing, product ideas, Tasmania photography, and print direction. If the next move is a collaboration, a commission, a feature, or a product conversation, this is the page that turns the portfolio into an actual lead.</p>
+          <div class="tag-row" data-reveal>
+            <span class="tag">Books and author presentation</span>
+            <span class="tag">App concepts and product direction</span>
+            <span class="tag">Photography and print enquiries</span>
+          </div>
+          <div class="button-row" data-reveal>
+            <a class="button button--primary" href="mailto:replace-with-your-email@example.com">Email for enquiries</a>
+            <a class="button button--ghost" href="https://vanvakarnee.com" target="_blank" rel="noreferrer">Visit VanVakarnee.com</a>
+          </div>
+          <p class="list-note" data-reveal>Replace the placeholder email link with your preferred address before publishing.</p>
+        </div>
+
+        <div class="hero__visual" data-reveal>
+          <canvas class="particle-canvas" data-particles aria-hidden="true"></canvas>
+          <div class="hero__grid-overlay" aria-hidden="true"></div>
+          <div class="floating-panel floating-panel--north" data-parallax="-18">
+            <div class="micro-label">Best fit</div>
+            <strong>Creative direction, product storytelling, and visually-led launches.</strong>
+            <p>Use this page as the conversion point for books, apps, prints, or cross-discipline collaborations.</p>
+          </div>
+          <div class="hero-stack" data-parallax="30">
+            <div class="hero-stack__screen">
+              <div class="hero-stack__screen-lines">
+                <div class="screen-ui__chip">Books / apps / prints</div>
+                <div class="hero-stack__screen-line mid"></div>
+                <div class="hero-stack__screen-line short"></div>
+                <div class="hero-stack__screen-chip"></div>
+                <div class="hero-stack__screen-chip"></div>
+              </div>
+            </div>
+            <div class="hero-stack__book">
+              <small>Open for</small>
+              <strong>Features, commissions, product conversations.</strong>
+            </div>
+            <div class="hero-stack__marquee">
+              <div class="marquee-track">
+                <span><b>BOOKS</b> launch pages <b>APPS</b> product storytelling <b>PRINTS</b> Tasmania image work</span>
+                <span><b>WRITING</b> showcases <b>PHOTOGRAPHY</b> licensing and prints <b>COLLABS</b> creative direction</span>
+              </div>
+            </div>
+          </div>
+          <div class="floating-panel floating-panel--south" data-parallax="20">
+            <div class="micro-label">Response path</div>
+            <strong>Email first, then route to the right section.</strong>
+            <p>The page is designed to make outreach feel like a premium handoff instead of a dead-end contact form.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="marquee-band">
+      <div class="marquee-track">
+        <span><b>CONTACT</b> COLLABORATIONS / COMMISSIONS / APP DEMOS / BOOK FEATURES / PRINT ENQUIRIES</span>
+        <span><b>CONTACT</b> COLLABORATIONS / COMMISSIONS / APP DEMOS / BOOK FEATURES / PRINT ENQUIRIES</span>
+      </div>
+    </div>
+
+    <section class="section">
+      <div class="shell detail-grid">
+        <div class="detail-panel" data-reveal>
+          <strong>Writing</strong>
+          <p>Book features, excerpt pages, author positioning, and presentation that makes the work feel more cinematic and market-ready.</p>
+        </div>
+        <div class="detail-panel" data-reveal>
+          <strong>Apps</strong>
+          <p>Product storytelling for VERVE, CHERIFLIX, BOOKLI, or future tools that need stronger launch framing and more premium visual direction.</p>
+        </div>
+        <div class="detail-panel" data-reveal>
+          <strong>Photography and prints</strong>
+          <p>Tasmania imagery, print conversations, and the commercial bridge through VanVakarnee for physical pieces and related collaborations.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="shell contact-grid">
+        <article class="contact-card" data-reveal data-tilt>
+          <div class="section-head__kicker">Fastest route</div>
+          <h2 class="contact-card__title">Use email for direct enquiries.</h2>
+          <p class="contact-copy">If the ask is specific, lead with the project type, timeline, and what part of the portfolio you are responding to. That makes the conversation faster and keeps this site working like a real business card instead of a static gallery.</p>
+          <div class="tag-row">
+            <a class="button button--primary" href="mailto:replace-with-your-email@example.com">Start an email</a>
+            <a class="button button--ghost" href="index.html" data-transition-label="Home">Back to home</a>
+          </div>
+        </article>
+
+        <article class="contact-card" data-reveal data-tilt>
+          <div class="section-head__kicker">Browse first</div>
+          <h2 class="contact-card__title">Jump straight into the right section.</h2>
+          <ul class="feature-list">
+            <li><strong>Writing</strong><span><a href="writing.html" data-transition-label="Writing">Open the book pages and writing overview.</a></span></li>
+            <li><strong>Apps</strong><span><a href="apps.html" data-transition-label="Apps">See VERVE, CHERIFLIX, and BOOKLI.</a></span></li>
+            <li><strong>Photography</strong><span><a href="photography.html" data-transition-label="Photography">View the Tasmania photography page.</a></span></li>
+            <li><strong>Prints</strong><span><a href="prints.html" data-transition-label="Prints">Move to the print and store direction.</a></span></li>
+          </ul>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell site-footer__inner">
+      <span>Contact page / books, apps, Tasmania, prints</span>
+      <div class="site-footer__links">
+        <a href="writing.html">Writing</a>
+        <a href="apps.html">Apps</a>
+        <a href="photography.html">Photography</a>
+        <a href="prints.html">Prints</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

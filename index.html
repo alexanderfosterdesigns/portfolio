@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Books, Apps, Photography</title>
+  <meta name="description" content="Animated dark portfolio featuring books, apps, Tasmania photography, and VanVakarnee art prints.">
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollTrigger.min.js"></script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script defer src="assets/js/site.js"></script>
+</head>
+<body data-page="home">
+  <div class="noise" aria-hidden="true"></div>
+  <div class="ambient ambient--one" aria-hidden="true"></div>
+  <div class="ambient ambient--two" aria-hidden="true"></div>
+  <div class="ambient ambient--three" aria-hidden="true"></div>
+  <div class="page-transition" id="page-transition" aria-hidden="true"><span>Portfolio</span></div>
+  <div class="progress-line" id="progress-line" aria-hidden="true"></div>
+  <div class="cursor-dot" id="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" id="cursor-ring" aria-hidden="true"></div>
+  <div class="cursor-blob" id="cursor-blob" aria-hidden="true"></div>
+
+  <header class="site-header" id="site-header">
+    <div class="shell site-header__inner">
+      <a class="brand" href="index.html" data-transition-label="Home">
+        <span class="brand__monogram">CV</span>
+        <span class="brand__text">
+          <span class="brand__name">Portfolio</span>
+          <span class="brand__label">Books / Apps / Tasmania</span>
+        </span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="index.html" data-nav="home">Home</a>
+        <a href="writing.html" data-nav="writing">Writing</a>
+        <a href="apps.html" data-nav="apps">Apps</a>
+        <a href="photography.html" data-nav="photography">Photography</a>
+        <a href="prints.html" data-nav="prints">Prints</a>
+        <a href="contact.html" data-nav="contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-shell">
+    <section class="hero">
+      <div class="shell hero__grid">
+        <div class="hero__copy">
+          <div class="kicker" data-reveal>Heavy motion / dark portfolio / real work</div>
+          <h1 class="hero__title">
+            <span class="hero__title-line">Books you can</span>
+            <span class="hero__title-line">pull from the shelf.</span>
+            <span class="hero__title-line">Apps with actual bite.</span>
+          </h1>
+          <p class="hero__lead" data-reveal>
+            This portfolio now centers the real work: <strong>Dancing on Jupiter</strong>, <strong>The Summer of 06</strong>, the apps <strong>VERVE</strong>, <strong>CHERIFLIX</strong>, and <strong>BOOKLI</strong>, plus photography shot in Tasmania and prints sold through VanVakarnee.com.
+          </p>
+          <div class="button-row" data-reveal>
+            <a class="button button--primary" href="writing.html" data-transition-label="Writing">Enter the books</a>
+            <a class="button button--ghost" href="apps.html" data-transition-label="Apps">See the apps</a>
+          </div>
+          <div class="hero__stats" data-reveal>
+            <div class="stat-card">
+              <div class="stat-label">Books</div>
+              <div class="stat-value">02</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-label">Apps</div>
+              <div class="stat-value">03</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-label">Prints</div>
+              <div class="stat-value">Tasmania</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__visual" data-reveal>
+          <canvas class="particle-canvas" data-particles aria-hidden="true"></canvas>
+          <div class="hero__grid-overlay" aria-hidden="true"></div>
+          <div class="floating-panel floating-panel--north" data-parallax="-28">
+            <div class="micro-label">Current stack</div>
+            <strong>GSAP, particles, cursor FX, tilt, dark UI.</strong>
+            <p>The whole site now leans into a more animated, portfolio-first presentation instead of a quieter editorial one.</p>
+          </div>
+          <div class="hero-stack" data-parallax="48">
+            <div class="hero-stack__screen">
+              <div class="hero-stack__screen-lines">
+                <div class="hero-stack__screen-line mid"></div>
+                <div class="hero-stack__screen-line short"></div>
+                <div class="hero-stack__screen-chip"></div>
+                <div class="hero-stack__screen-chip"></div>
+              </div>
+            </div>
+            <div class="hero-stack__book">
+              <small>Featured book</small>
+              <strong>Dancing on Jupiter</strong>
+            </div>
+            <div class="hero-stack__marquee">
+              <div class="marquee-track">
+                <span><b>VERVE</b> local music app <b>CHERIFLIX</b> streaming platform <b>BOOKLI</b> AI writing tool</span>
+                <span><b>TASMANIA</b> photography and prints <b>VANVAKARNEE.COM</b> art print store</span>
+              </div>
+            </div>
+          </div>
+          <div class="floating-panel floating-panel--south" data-parallax="34">
+            <div class="micro-label">Hover the books</div>
+            <strong>They pull forward, then open before navigation.</strong>
+            <p>The book transition is now treated like a real hero interaction instead of a generic page jump.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="marquee-band">
+      <div class="marquee-track">
+        <span><b>DANCING ON JUPITER</b> THE SUMMER OF 06 <b>VERVE</b> CHERIFLIX <b>BOOKLI</b> TASMANIA <b>VANVAKARNEE</b></span>
+        <span><b>DANCING ON JUPITER</b> THE SUMMER OF 06 <b>VERVE</b> CHERIFLIX <b>BOOKLI</b> TASMANIA <b>VANVAKARNEE</b></span>
+      </div>
+    </div>
+
+    <section class="section">
+      <div class="shell">
+        <div class="bookshelf" data-reveal>
+          <div class="bookshelf__top">
+            <div>
+              <div class="section-head__kicker">Interactive writing shelf</div>
+              <h2 class="section-head__title">Pull a book out, click it, and let it open into its own page.</h2>
+            </div>
+            <p class="bookshelf__copy">This is the interaction you asked for: the books live on a shelf first, they pull out on hover, and the click now triggers a real open-book transition before taking you into the detail page.</p>
+          </div>
+
+          <div class="bookshelf__stage">
+            <div class="bookshelf__books" aria-label="Featured books">
+              <a class="shelf-book theme-jupiter" href="dancing-on-jupiter.html" data-book-link data-book-slug="dancing-on-jupiter" data-book-title="Dancing on Jupiter" data-book-meta="Book One" data-book-base="#5f34f5" data-book-edge="#140a33">
+                <span class="shelf-book__hint">Pull / open</span>
+                <span class="shelf-book__shadow" aria-hidden="true"></span>
+                <span class="shelf-book__body" data-book-visual>
+                  <span class="shelf-book__spine">
+                    <span class="shelf-book__spine-label">Dancing on Jupiter</span>
+                    <span class="shelf-book__spine-meta">Book One</span>
+                  </span>
+                  <span class="shelf-book__face">
+                    <span class="shelf-book__genre">Featured book</span>
+                    <span class="shelf-book__title">Dancing on Jupiter</span>
+                    <span class="shelf-book__cta">Click to open</span>
+                  </span>
+                  <span class="shelf-book__pages" aria-hidden="true"></span>
+                </span>
+              </a>
+
+              <a class="shelf-book theme-summer" href="summer-of-06.html" data-book-link data-book-slug="the-summer-of-06" data-book-title="The Summer of 06" data-book-meta="Book Two" data-book-base="#f47f42" data-book-edge="#2c1208">
+                <span class="shelf-book__hint">Pull / open</span>
+                <span class="shelf-book__shadow" aria-hidden="true"></span>
+                <span class="shelf-book__body" data-book-visual>
+                  <span class="shelf-book__spine">
+                    <span class="shelf-book__spine-label">The Summer of 06</span>
+                    <span class="shelf-book__spine-meta">Book Two</span>
+                  </span>
+                  <span class="shelf-book__face">
+                    <span class="shelf-book__genre">Featured book</span>
+                    <span class="shelf-book__title">The Summer of 06</span>
+                    <span class="shelf-book__cta">Click to open</span>
+                  </span>
+                  <span class="shelf-book__pages" aria-hidden="true"></span>
+                </span>
+              </a>
+            </div>
+            <div class="bookshelf__rail" aria-hidden="true"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="shell">
+        <div class="section-head">
+          <div>
+            <div class="section-head__kicker">Main sections</div>
+            <h2 class="section-head__title">Everything now has its own animated lane.</h2>
+          </div>
+          <p class="section-head__copy">Instead of flattening every medium into one long minimal page, the portfolio now splits the work into distinct destinations and gives each one enough motion and atmosphere to feel premium.</p>
+        </div>
+
+        <div class="spotlight-grid">
+          <a class="spotlight-card" href="writing.html" data-reveal data-tilt data-transition-label="Writing">
+            <div class="spotlight-card__media book-card__cover theme-jupiter"><div class="book-card__cover-inner"><small class="micro-label">Writing</small><div class="book-card__cover-title">Two books, each with its own page.</div></div></div>
+            <div class="section-head__kicker">Writing</div>
+            <h3 class="spotlight-card__title">Dancing on Jupiter and The Summer of 06</h3>
+            <p class="spotlight-card__copy">A writing overview page plus dedicated detail pages, all connected back to the shelf interaction.</p>
+          </a>
+
+          <a class="spotlight-card" href="apps.html" data-reveal data-tilt data-transition-label="Apps">
+            <div class="spotlight-card__media spotlight-card__media--verve"><div class="ui-mock"><div class="ui-mock__line mid"></div><div class="ui-mock__line short"></div><div class="ui-mock__block"></div></div></div>
+            <div class="section-head__kicker">Apps</div>
+            <h3 class="spotlight-card__title">VERVE, CHERIFLIX, BOOKLI</h3>
+            <p class="spotlight-card__copy">Three real products, each framed like a premium launch page instead of a generic app card.</p>
+          </a>
+
+          <a class="spotlight-card" href="photography.html" data-reveal data-tilt data-transition-label="Photography">
+            <div class="spotlight-card__media spotlight-card__media--tasmania"></div>
+            <div class="section-head__kicker">Photography</div>
+            <h3 class="spotlight-card__title">Tasmania as a visual world, not just a gallery.</h3>
+            <p class="spotlight-card__copy">Landscape, coast, forest, and city atmospheres shot in Tasmania and positioned as part of the wider creative portfolio.</p>
+          </a>
+
+          <a class="spotlight-card" href="prints.html" data-reveal data-tilt data-transition-label="Prints">
+            <div class="spotlight-card__media spotlight-card__media--bookli"><div class="ui-mock"><div class="ui-mock__line mid"></div><div class="ui-mock__block"></div><div class="ui-mock__line short"></div></div></div>
+            <div class="section-head__kicker">Prints</div>
+            <h3 class="spotlight-card__title">VanVakarnee.com as the print and product destination.</h3>
+            <p class="spotlight-card__copy">A dedicated page for the store direction, art print positioning, and the bridge between photography and product.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell site-footer__inner">
+      <span>Dark animated portfolio / books, apps, Tasmania, prints</span>
+      <div class="site-footer__links">
+        <a href="writing.html">Writing</a>
+        <a href="apps.html">Apps</a>
+        <a href="photography.html">Photography</a>
+        <a href="prints.html">Prints</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
