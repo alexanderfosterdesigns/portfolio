@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CHERIFLIX | Alexander Foster</title>
+  <meta name="description" content="CHERIFLIX case page for Alexander Foster's streaming app.">
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollTrigger.min.js"></script>
+  <script defer src="https://unpkg.com/lenis@1.3.15/dist/lenis.min.js"></script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script defer src="assets/js/site.js"></script>
+</head>
+<body data-page="apps">
+  <div class="noise" aria-hidden="true"></div>
+  <div class="ambient ambient--one" aria-hidden="true"></div>
+  <div class="ambient ambient--two" aria-hidden="true"></div>
+  <div class="ambient ambient--three" aria-hidden="true"></div>
+  <div class="page-transition" id="page-transition" aria-hidden="true"><span>CHERIFLIX</span></div>
+  <div class="progress-line" id="progress-line" aria-hidden="true"></div>
+  <div class="cursor-dot" id="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" id="cursor-ring" aria-hidden="true"></div>
+  <div class="cursor-blob" id="cursor-blob" aria-hidden="true"></div>
+
+  <header class="site-header" id="site-header">
+    <div class="shell site-header__inner">
+      <a class="brand" href="index.html" data-transition-label="Home">
+        <span class="brand__monogram">AF</span>
+        <span class="brand__text">
+          <span class="brand__name">Alexander Foster</span>
+          <span class="brand__label">Writing / Apps / Tasmania</span>
+        </span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="index.html" data-nav="home">Home</a>
+        <a href="writing.html" data-nav="writing">Writing</a>
+        <a href="apps.html" data-nav="apps">Apps</a>
+        <a href="photography.html" data-nav="photography">Photography</a>
+        <a href="prints.html" data-nav="prints">Prints</a>
+        <a href="contact.html" data-nav="contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-shell">
+    <section class="page-hero">
+      <div class="shell book-detail-hero__grid">
+        <div>
+          <div class="page-hero__header">
+            <div>
+              <div class="section-head__kicker" data-reveal>App page / two</div>
+              <h1 class="book-detail-hero__title" data-reveal>CHERIFLIX</h1>
+            </div>
+          </div>
+          <p class="page-hero__copy" data-reveal>CHERIFLIX is a Netflix-like streaming app driven by streaming APIs and TMDB. This page pushes it toward a cinematic product pitch: discovery, mood, and metadata all working together so the interface feels like the start of watching, not a stop before it.</p>
+          <div class="tag-row" data-reveal>
+            <span class="tag">Streaming app</span>
+            <span class="tag">TMDB</span>
+            <span class="tag">API-powered</span>
+            <span class="tag">Cinematic UI</span>
+          </div>
+          <div class="book-detail-hero__actions" data-reveal>
+            <a class="button button--primary" href="apps.html" data-transition-label="Apps">Back to apps</a>
+            <a class="button button--ghost" href="bookli.html" data-transition-label="BOOKLI">Next app</a>
+          </div>
+        </div>
+        <div class="app-detail-stage app-detail-stage--cheriflix" data-reveal>
+          <span class="app-detail-stage__beam" aria-hidden="true"></span>
+          <span class="app-detail-stage__grid" aria-hidden="true"></span>
+          <span class="app-detail-stage__orbit" aria-hidden="true"></span>
+          <span class="app-detail-stage__orbit--inner" aria-hidden="true"></span>
+          <span class="app-detail-stage__badge app-detail-stage__badge--north">Streaming APIs / TMDB</span>
+          <span class="app-detail-stage__badge app-detail-stage__badge--south">Browse / discover / play</span>
+          <div class="app-detail-stage__device">
+            <div class="cinema-mock">
+              <div class="cinema-mock__screen">
+                <div class="cinema-ui">
+                  <div class="screen-ui__chip">Tonight's watch</div>
+                  <div class="cinema-ui__top"></div>
+                  <div class="cinema-ui__row"></div>
+                  <div class="cinema-ui__row short"></div>
+                  <div class="cinema-ui__thumbs">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="marquee-band">
+      <div class="marquee-track">
+        <span><b>CHERIFLIX</b> STREAMING APIs <b>TMDB</b> DISCOVERY / CINEMA / RECOMMENDATION / NIGHT MODE</span>
+        <span><b>CHERIFLIX</b> STREAMING APIs <b>TMDB</b> DISCOVERY / CINEMA / RECOMMENDATION / NIGHT MODE</span>
+      </div>
+    </div>
+
+    <section class="section">
+      <div class="shell detail-grid">
+        <div class="detail-panel" data-reveal>
+          <strong>Product idea</strong>
+          <p>CHERIFLIX treats movie and show discovery as an atmosphere problem as much as a data problem. The interface is there to build anticipation, not just list content.</p>
+        </div>
+        <div class="detail-panel" data-reveal>
+          <strong>System</strong>
+          <p>Streaming APIs plus TMDB create a more complete content layer: metadata, discovery rails, and a catalogue that feels grounded in real-world media structure.</p>
+        </div>
+        <div class="detail-panel" data-reveal>
+          <strong>Why it matters here</strong>
+          <p>It shows how the portfolio handles entertainment products differently from books or writing tools. The mood shifts, but the level of intention stays high.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="shell section-lead">
+        <div class="detail-panel" data-reveal>
+          <div class="section-head__kicker">Positioning line</div>
+          <div class="quote-panel">A streaming interface that feels like a trailer frame before the first click lands.</div>
+        </div>
+        <div class="detail-panel" data-reveal>
+          <div class="section-head__kicker">Core moves</div>
+          <div class="list-grid">
+            <div class="list-grid__item">
+              <strong>Cinematic browse flow</strong>
+              <p>The app leans into mood and visual hierarchy instead of neutral utility.</p>
+            </div>
+            <div class="list-grid__item">
+              <strong>Metadata-backed discovery</strong>
+              <p>TMDB gives the content surface enough depth to feel like a real product universe.</p>
+            </div>
+            <div class="list-grid__item">
+              <strong>Content-first dark UI</strong>
+              <p>The portfolio case study reinforces the same screen language the app itself wants.</p>
+            </div>
+          </div>
+          <div class="book-detail-hero__actions">
+            <a class="button button--primary" href="apps.html" data-transition-label="Apps">Back to apps</a>
+            <a class="button button--ghost" href="bookli.html" data-transition-label="BOOKLI">Next: BOOKLI</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell site-footer__inner">
+      <span>Alexander Foster / CHERIFLIX case page</span>
+      <div class="site-footer__links">
+        <a href="apps.html">Apps</a>
+        <a href="verve.html">VERVE</a>
+        <a href="bookli.html">BOOKLI</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

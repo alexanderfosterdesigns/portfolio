@@ -9,6 +9,9 @@ Static multi-page portfolio rebuilt into a darker, motion-heavy presentation for
 - `dancing-on-jupiter.html` - dedicated page for Dancing on Jupiter
 - `summer-of-06.html` - dedicated page for The Summer of 06
 - `apps.html` - showcase for VERVE, CHERIFLIX, and BOOKLI
+- `verve.html` - dedicated page for the VERVE music app
+- `cheriflix.html` - dedicated page for the CHERIFLIX streaming app
+- `bookli.html` - dedicated page for the BOOKLI writing app
 - `photography.html` - Tasmania photography page
 - `prints.html` - print/store page linked to VanVakarnee
 - `contact.html` - contact and enquiry page
@@ -28,5 +31,5 @@ Static multi-page portfolio rebuilt into a darker, motion-heavy presentation for
 ## Before publishing
 
 - Replace the placeholder contact email in `contact.html`.
-- Replace placeholder descriptive copy anywhere you want more exact project or book details.
+- Replace any project or book copy you want to make even more specific over time.
 - Keep external links current, especially `https://vanvakarnee.com`.

@@ -3,14 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio | Books, Apps, Photography</title>
-  <meta name="description" content="Animated dark portfolio featuring books, apps, Tasmania photography, and VanVakarnee art prints.">
+  <title>Alexander Foster | Books, Apps, Photography</title>
+  <meta name="description" content="Alexander Foster portfolio featuring immersive writing, app, photography, and print worlds.">
   <script>document.documentElement.classList.add('js');</script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollTrigger.min.js"></script>
+  <script defer src="https://unpkg.com/lenis@1.3.15/dist/lenis.min.js"></script>
   <link rel="stylesheet" href="assets/css/styles.css">
   <script defer src="assets/js/site.js"></script>
 </head>
@@ -19,19 +20,45 @@
   <div class="ambient ambient--one" aria-hidden="true"></div>
   <div class="ambient ambient--two" aria-hidden="true"></div>
   <div class="ambient ambient--three" aria-hidden="true"></div>
-  <div class="page-transition" id="page-transition" aria-hidden="true"><span>Portfolio</span></div>
+  <div class="page-transition" id="page-transition" aria-hidden="true"><span>Alexander Foster</span></div>
   <div class="progress-line" id="progress-line" aria-hidden="true"></div>
   <div class="cursor-dot" id="cursor-dot" aria-hidden="true"></div>
   <div class="cursor-ring" id="cursor-ring" aria-hidden="true"></div>
   <div class="cursor-blob" id="cursor-blob" aria-hidden="true"></div>
+  <div class="intro-sequence" id="intro-sequence" aria-hidden="true">
+    <div class="intro-sequence__inner">
+      <span class="intro-sequence__line"></span>
+      <div class="intro-sequence__name">
+        <span class="intro-sequence__word">
+          <span data-intro-char>A</span>
+          <span data-intro-char>L</span>
+          <span data-intro-char>E</span>
+          <span data-intro-char>X</span>
+          <span data-intro-char>A</span>
+          <span data-intro-char>N</span>
+          <span data-intro-char>D</span>
+          <span data-intro-char>E</span>
+          <span data-intro-char>R</span>
+        </span>
+        <span class="intro-sequence__word intro-sequence__word--offset">
+          <span data-intro-char>F</span>
+          <span data-intro-char>O</span>
+          <span data-intro-char>S</span>
+          <span data-intro-char>T</span>
+          <span data-intro-char>E</span>
+          <span data-intro-char>R</span>
+        </span>
+      </div>
+    </div>
+  </div>
 
-  <header class="site-header" id="site-header">
+  <header class="site-header" id="site-header" data-home-reveal>
     <div class="shell site-header__inner">
       <a class="brand" href="index.html" data-transition-label="Home">
-        <span class="brand__monogram">CV</span>
+        <span class="brand__monogram">AF</span>
         <span class="brand__text">
-          <span class="brand__name">Portfolio</span>
-          <span class="brand__label">Books / Apps / Tasmania</span>
+          <span class="brand__name">Alexander Foster</span>
+          <span class="brand__label">Writing / Apps / Tasmanian Made</span>
         </span>
       </a>
       <nav class="site-nav" aria-label="Primary">
@@ -45,174 +72,761 @@
     </div>
   </header>
 
-  <main class="page-shell">
-    <section class="hero">
-      <div class="shell hero__grid">
-        <div class="hero__copy">
-          <div class="kicker" data-reveal>Heavy motion / dark portfolio / real work</div>
-          <h1 class="hero__title">
-            <span class="hero__title-line">Books you can</span>
-            <span class="hero__title-line">pull from the shelf.</span>
-            <span class="hero__title-line">Apps with actual bite.</span>
-          </h1>
-          <p class="hero__lead" data-reveal>
-            This portfolio now centers the real work: <strong>Dancing on Jupiter</strong>, <strong>The Summer of 06</strong>, the apps <strong>VERVE</strong>, <strong>CHERIFLIX</strong>, and <strong>BOOKLI</strong>, plus photography shot in Tasmania and prints sold through VanVakarnee.com.
-          </p>
-          <div class="button-row" data-reveal>
-            <a class="button button--primary" href="writing.html" data-transition-label="Writing">Enter the books</a>
-            <a class="button button--ghost" href="apps.html" data-transition-label="Apps">See the apps</a>
-          </div>
-          <div class="hero__stats" data-reveal>
-            <div class="stat-card">
-              <div class="stat-label">Books</div>
-              <div class="stat-value">02</div>
-            </div>
-            <div class="stat-card">
-              <div class="stat-label">Apps</div>
-              <div class="stat-value">03</div>
-            </div>
-            <div class="stat-card">
-              <div class="stat-label">Prints</div>
-              <div class="stat-value">Tasmania</div>
-            </div>
-          </div>
+  <main class="page-shell home-shell">
+    <section class="scene-section scene-section--hero">
+      <div class="scene-panel hero hero--immersive">
+        <div class="scene-layer scene-layer--grid" data-depth="-22" aria-hidden="true"></div>
+        <div class="scene-layer scene-layer--glow" data-depth="18" aria-hidden="true"></div>
+        <div class="section-wipe section-wipe--hero" data-depth="10" aria-hidden="true">
+          <span class="section-wipe__line"></span>
+          <span class="section-wipe__dot"></span>
+          <span class="section-wipe__geo"></span>
         </div>
+        <div class="shell hero__grid hero__grid--home">
+          <div class="hero__copy hero__copy--home" data-home-reveal>
+            <div class="kicker">Alexander Foster / live titles / product builds / Tasmanian Made</div>
+            <h1 class="hero__name" aria-label="Alexander Foster">
+              <span class="hero__name-line">Alexander</span>
+              <span class="hero__name-line">Foster</span>
+            </h1>
+            <p class="hero__name-script">Books, apps, photography, and everything in between.</p>
+            <p class="hero__poster-copy">Writing, product builds, Tasmanian-made image-making, and print worlds connected through one portfolio.</p>
+            <div class="button-row">
+              <a class="button button--primary" href="writing.html" data-transition-label="Writing">Open shelf</a>
+              <a class="button button--ghost" href="apps.html" data-transition-label="Apps">Launch apps</a>
+            </div>
+          </div>
 
-        <div class="hero__visual" data-reveal>
-          <canvas class="particle-canvas" data-particles aria-hidden="true"></canvas>
-          <div class="hero__grid-overlay" aria-hidden="true"></div>
-          <div class="floating-panel floating-panel--north" data-parallax="-28">
-            <div class="micro-label">Current stack</div>
-            <strong>GSAP, particles, cursor FX, tilt, dark UI.</strong>
-            <p>The whole site now leans into a more animated, portfolio-first presentation instead of a quieter editorial one.</p>
-          </div>
-          <div class="hero-stack" data-parallax="48">
-            <div class="hero-stack__screen">
-              <div class="hero-stack__screen-lines">
-                <div class="hero-stack__screen-line mid"></div>
-                <div class="hero-stack__screen-line short"></div>
-                <div class="hero-stack__screen-chip"></div>
-                <div class="hero-stack__screen-chip"></div>
-              </div>
+          <div class="hero__visual hero__visual--home" data-home-reveal>
+            <canvas class="particle-canvas" data-particles aria-hidden="true"></canvas>
+            <div class="hero__grid-overlay" data-depth="-14" aria-hidden="true"></div>
+            <div class="floating-panel home-chip home-chip--one" data-depth="-10">
+              <div class="micro-label">Writing</div>
+              <strong>Dancing on Jupiter / The Summer of 06</strong>
             </div>
-            <div class="hero-stack__book">
-              <small>Featured book</small>
-              <strong>Dancing on Jupiter</strong>
+            <div class="floating-panel home-chip home-chip--two" data-depth="18">
+              <div class="micro-label">Worlds</div>
+              <strong>Apps / Photography / Prints</strong>
             </div>
-            <div class="hero-stack__marquee">
-              <div class="marquee-track">
-                <span><b>VERVE</b> local music app <b>CHERIFLIX</b> streaming platform <b>BOOKLI</b> AI writing tool</span>
-                <span><b>TASMANIA</b> photography and prints <b>VANVAKARNEE.COM</b> art print store</span>
-              </div>
-            </div>
-          </div>
-          <div class="floating-panel floating-panel--south" data-parallax="34">
-            <div class="micro-label">Hover the books</div>
-            <strong>They pull forward, then open before navigation.</strong>
-            <p>The book transition is now treated like a real hero interaction instead of a generic page jump.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <div class="marquee-band">
-      <div class="marquee-track">
-        <span><b>DANCING ON JUPITER</b> THE SUMMER OF 06 <b>VERVE</b> CHERIFLIX <b>BOOKLI</b> TASMANIA <b>VANVAKARNEE</b></span>
-        <span><b>DANCING ON JUPITER</b> THE SUMMER OF 06 <b>VERVE</b> CHERIFLIX <b>BOOKLI</b> TASMANIA <b>VANVAKARNEE</b></span>
+    <section class="scene-section scene-section--shelf" id="library-section">
+      <div class="scene-panel">
+        <div class="scene-layer scene-layer--glow scene-layer--amber" data-depth="24" aria-hidden="true"></div>
+        <div class="section-wipe section-wipe--shelf" data-depth="-8" aria-hidden="true">
+          <span class="section-wipe__line"></span>
+          <span class="section-wipe__dot"></span>
+          <span class="section-wipe__geo"></span>
+        </div>
+        <div class="shell">
+          <div class="section-head section-head--minimal" data-depth="-10">
+            <div>
+              <div class="section-head__kicker">Writing</div>
+              <h2 class="section-head__title">Live Shelf</h2>
+            </div>
+            <div class="tag-row">
+              <span class="tag">Archive</span>
+              <span class="tag">Two live titles</span>
+              <span class="tag">Pull / open / fall in</span>
+            </div>
+          </div>
+
+          <!-- ── INTERACTIVE BOOKSHELF ── -->
+          <div class="af-shelf-scene" data-reveal data-depth="14">
+            <div id="af-shelf-wrap">
+              <div id="af-books" aria-label="Writing shelf">
+
+                <!-- Ambient: Field Notes -->
+                <div class="af-book af-book--ambient" id="afb-fn" aria-hidden="true">
+                  <div class="af-b-glow"></div>
+                  <div class="af-b-spine">
+                    <span class="af-syear">Archive</span>
+                    <div class="af-sdeco"></div>
+                    <div class="af-semblem"></div>
+                    <span class="af-stitle">Field Notes</span>
+                  </div>
+                  <div class="af-b-top"></div>
+                  <div class="af-b-right"></div>
+                </div>
+
+                <!-- Ambient: Draft Zero -->
+                <div class="af-book af-book--ambient" id="afb-dz" aria-hidden="true">
+                  <div class="af-b-glow"></div>
+                  <div class="af-b-spine">
+                    <span class="af-syear">Notebook</span>
+                    <div class="af-sdeco"></div>
+                    <div class="af-semblem"></div>
+                    <span class="af-stitle">Draft Zero</span>
+                  </div>
+                  <div class="af-b-top"></div>
+                  <div class="af-b-right"></div>
+                </div>
+
+                <!-- LIVE: Dancing on Jupiter -->
+                <div class="af-book af-book--featured" id="afb-doj" data-id="doj" data-href="dancing-on-jupiter.html">
+                  <div class="af-b-glow"></div>
+                  <div class="af-b-spine">
+                    <span class="af-syear">2024</span>
+                    <div class="af-sdeco"></div>
+                    <div class="af-semblem"></div>
+                    <span class="af-stitle">Dancing on Jupiter</span>
+                  </div>
+                  <div class="af-b-top"></div>
+                  <div class="af-b-right"></div>
+                  <span class="af-book__status">Live title</span>
+                </div>
+
+                <!-- Ambient: Proof Copy -->
+                <div class="af-book af-book--ambient" id="afb-pc" aria-hidden="true">
+                  <div class="af-b-glow"></div>
+                  <div class="af-b-spine">
+                    <span class="af-syear">Shelf</span>
+                    <div class="af-sdeco"></div>
+                    <div class="af-semblem"></div>
+                    <span class="af-stitle">Proof Copy</span>
+                  </div>
+                  <div class="af-b-top"></div>
+                  <div class="af-b-right"></div>
+                </div>
+
+                <!-- Ambient: Manuscript -->
+                <div class="af-book af-book--ambient" id="afb-ms" aria-hidden="true">
+                  <div class="af-b-glow"></div>
+                  <div class="af-b-spine">
+                    <span class="af-syear">Archive</span>
+                    <div class="af-sdeco"></div>
+                    <div class="af-semblem"></div>
+                    <span class="af-stitle">Manuscript</span>
+                  </div>
+                  <div class="af-b-top"></div>
+                  <div class="af-b-right"></div>
+                </div>
+
+                <!-- LIVE: The Summer of 06 -->
+                <div class="af-book af-book--featured" id="afb-s06" data-id="s06" data-href="summer-of-06.html">
+                  <div class="af-b-glow"></div>
+                  <div class="af-b-spine">
+                    <span class="af-syear">2025</span>
+                    <div class="af-sdeco"></div>
+                    <div class="af-semblem"></div>
+                    <span class="af-stitle">The Summer of 06</span>
+                  </div>
+                  <div class="af-b-top"></div>
+                  <div class="af-b-right"></div>
+                  <span class="af-book__status">Live title</span>
+                </div>
+
+                <!-- Ambient: Archive -->
+                <div class="af-book af-book--ambient" id="afb-ar" aria-hidden="true">
+                  <div class="af-b-glow"></div>
+                  <div class="af-b-spine">
+                    <span class="af-syear">Notes</span>
+                    <div class="af-sdeco"></div>
+                    <div class="af-semblem"></div>
+                    <span class="af-stitle">Archive</span>
+                  </div>
+                  <div class="af-b-top"></div>
+                  <div class="af-b-right"></div>
+                </div>
+
+                <!-- Ambient: Sketchbook -->
+                <div class="af-book af-book--ambient" id="afb-sk" aria-hidden="true">
+                  <div class="af-b-glow"></div>
+                  <div class="af-b-spine">
+                    <span class="af-syear">Draft</span>
+                    <div class="af-sdeco"></div>
+                    <div class="af-semblem"></div>
+                    <span class="af-stitle">Sketchbook</span>
+                  </div>
+                  <div class="af-b-top"></div>
+                  <div class="af-b-right"></div>
+                </div>
+
+              </div><!-- #af-books -->
+              <div id="af-shelf-board" aria-hidden="true"></div>
+            </div><!-- #af-shelf-wrap -->
+            <p class="af-shelf-hint">Hover — Click to open</p>
+          </div><!-- .af-shelf-scene -->
+
+        </div>
       </div>
+    </section>
+
+    <!-- ── BOOK OPEN OVERLAY ── -->
+    <section class="hero-stats-band" aria-label="Portfolio stats">
+      <div class="shell hero-stats-band__grid">
+        <article class="hero-stat" data-reveal>
+          <div class="hero-stat__value">03</div>
+          <div class="hero-stat__label">Product builds</div>
+        </article>
+        <article class="hero-stat" data-reveal>
+          <div class="hero-stat__value">02</div>
+          <div class="hero-stat__label">Live titles</div>
+        </article>
+        <article class="hero-stat" data-reveal>
+          <div class="hero-stat__value">11</div>
+          <div class="hero-stat__label">Live pages</div>
+        </article>
+        <article class="hero-stat" data-reveal>
+          <div class="hero-stat__value">04</div>
+          <div class="hero-stat__label">Creative worlds</div>
+        </article>
+      </div>
+    </section>
+
+    <div id="af-overlay" aria-hidden="true">
+      <div id="af-obg"></div>
+      <div id="af-fly"></div>
     </div>
 
-    <section class="section">
-      <div class="shell">
-        <div class="bookshelf" data-reveal>
-          <div class="bookshelf__top">
+    <style>
+    /* ══ AF INTERACTIVE SHELF ══ */
+    .af-shelf-scene {
+      width:100%;
+      display:flex; flex-direction:column; align-items:stretch;
+      padding: 52px 0 28px;
+    }
+    .scene-section--shelf .scene-panel {
+      overflow:visible;
+    }
+    #af-shelf-wrap {
+      --af-book-scale:1.72;
+      position:relative;
+      transform-style:preserve-3d;
+      transform-origin:center bottom;
+      perspective:2200px;
+      perspective-origin:center 40%;
+      width:100%; max-width:100%;
+      display:flex; flex-direction:column; align-items:center;
+      margin:0 auto;
+    }
+    #af-books {
+      width:min(100%, 1240px);
+      display:flex; align-items:flex-end; justify-content:center;
+      gap:20px; padding:0 22px;
+      transform-style:preserve-3d;
+      isolation:isolate;
+      position:relative;
+      z-index:2;
+    }
+    #af-shelf-board {
+      width:100%; max-width:100%; height:20px;
+      background:linear-gradient(180deg,#3a2c12,#1c1508 50%,#0b0804);
+      border-radius:2px 2px 0 0;
+      box-shadow:0 8px 50px rgba(0,0,0,.95), inset 0 1px 0 rgba(255,255,255,.04);
+      position:relative;
+      z-index:1;
+      margin-top:10px;
+    }
+    #af-shelf-board::before {
+      content:''; position:absolute; top:3px; left:4%; right:4%; height:1px;
+      background:linear-gradient(90deg,transparent,rgba(200,169,110,0.4),transparent);
+    }
+    .af-shelf-hint {
+      margin-top:28px;
+      font-size:9px; letter-spacing:.42em; color:rgba(240,230,211,0.35);
+      text-transform:uppercase; white-space:nowrap;
+      font-family:'Space Mono', monospace;
+    }
+
+    /* ── BOOK BASE ── */
+    .af-book {
+      transform-style:preserve-3d;
+      transform-origin:bottom center;
+      cursor:pointer;
+      transition:transform 0.55s cubic-bezier(0.34,1.4,0.64,1);
+      position:relative;
+      flex:0 0 auto;
+      z-index:0;
+    }
+    .af-book--ambient { cursor:default; pointer-events:none; }
+    .af-book--featured {
+      z-index:3;
+    }
+    .af-book--featured::before {
+      content:'';
+      position:absolute;
+      inset:calc(-28px * var(--af-book-scale)) calc(-34px * var(--af-book-scale)) calc(-14px * var(--af-book-scale));
+      background:transparent;
+      pointer-events:auto;
+      transform:translateZ(calc(2px * var(--af-book-scale)));
+    }
+    #afb-doj::before {
+      inset:calc(-42px * var(--af-book-scale)) calc(-74px * var(--af-book-scale)) calc(-18px * var(--af-book-scale)) calc(-48px * var(--af-book-scale));
+    }
+    .af-book--featured:not(.af-locked):hover {
+      z-index:40;
+      transform:rotateX(-38deg) translateZ(8px);
+    }
+    .af-book__status {
+      position:absolute; top:calc(-24px * var(--af-book-scale)); left:50%; transform:translateX(-50%);
+      font-size:calc(8px * var(--af-book-scale)); letter-spacing:.3em; text-transform:uppercase;
+      color:rgba(200,169,110,0.7); white-space:nowrap;
+      font-family:'Space Mono', monospace; pointer-events:none;
+    }
+
+    .af-b-spine,
+    .af-b-top,
+    .af-b-right {
+      box-sizing:border-box;
+      transform-style:preserve-3d;
+      backface-visibility:hidden;
+    }
+    .af-b-spine {
+      position:absolute; top:0; left:0;
+      display:flex; flex-direction:column;
+      align-items:center; justify-content:space-between;
+      padding:calc(16px * var(--af-book-scale)) calc(8px * var(--af-book-scale));
+      overflow:hidden;
+      box-shadow:0 16px 40px rgba(0,0,0,.46);
+    }
+    .af-b-spine::before {
+      content:''; position:absolute; inset:0; pointer-events:none;
+      background:
+        linear-gradient(180deg,rgba(255,255,255,.05) 0,transparent 18%,transparent 82%,rgba(0,0,0,.08) 100%),
+        linear-gradient(90deg,rgba(255,255,255,.035) 0,transparent 16%,transparent 84%,rgba(0,0,0,.14) 100%);
+    }
+    .af-b-spine::after {
+      content:''; position:absolute; inset:0; pointer-events:none;
+      background:linear-gradient(90deg,rgba(4,6,10,.24) 0,transparent 12%,transparent 86%,rgba(4,6,10,.4) 100%);
+    }
+    .af-b-top {
+      position:absolute; left:0;
+      overflow:hidden;
+      background:repeating-linear-gradient(0deg,#cfc6ad 0px,#cfc6ad 1px,#e1d8c2 1px,#e1d8c2 2px,#c5bba3 2px,#c5bba3 3px,#d6cdb7 3px,#d6cdb7 4px,#cdc5af 4px,#cdc5af 5px,#e0d7c1 5px,#e0d7c1 6px);
+      box-shadow:inset 0 0 8px rgba(0,0,0,.48),inset -8px 0 16px rgba(0,0,0,.56),inset 0 -2px 6px rgba(0,0,0,.26);
+    }
+    .af-b-top::before {
+      content:''; position:absolute; inset:0; pointer-events:none;
+      background:linear-gradient(180deg,rgba(18,12,8,.4) 0,transparent 38%,rgba(255,255,255,.04) 100%);
+    }
+    .af-b-right {
+      position:absolute; top:0;
+      overflow:hidden;
+      background:repeating-linear-gradient(90deg,#b5ab90 0px,#b5ab90 1px,#d4cab3 1px,#d4cab3 3px,#c3b99f 3px,#c3b99f 4px,#dbd2bc 4px,#dbd2bc 6px);
+      box-shadow:inset 0 0 8px rgba(0,0,0,.34),inset 10px 0 18px rgba(0,0,0,.28);
+    }
+    .af-b-right::before {
+      content:''; position:absolute; inset:0; pointer-events:none;
+      background:linear-gradient(90deg,rgba(18,12,8,.48) 0,rgba(18,12,8,.14) 22%,transparent 56%,rgba(255,255,255,.05) 100%);
+    }
+    .af-b-glow {
+      position:absolute; inset:calc(-20px * var(--af-book-scale));
+      border-radius:calc(6px * var(--af-book-scale)); pointer-events:none;
+      opacity:0; z-index:-1; transition:opacity .4s;
+    }
+    .af-book--featured:not(.af-locked):hover .af-b-glow { opacity:1; }
+
+    .af-stitle { writing-mode:vertical-rl;transform:rotate(180deg);font-family:'Bebas Neue',sans-serif;font-size:calc(13px * var(--af-book-scale));letter-spacing:.18em;color:rgba(255,255,255,.9);text-shadow:0 1px 4px rgba(0,0,0,.7);pointer-events:none;user-select:none;position:relative;z-index:1; }
+    .af-syear  { writing-mode:vertical-rl;transform:rotate(180deg);font-family:'Cormorant Garamond',serif;font-size:calc(9px * var(--af-book-scale));letter-spacing:.22em;color:rgba(255,255,255,.4);pointer-events:none;user-select:none;position:relative;z-index:1; }
+    .af-sdeco  { width:calc(16px * var(--af-book-scale));height:1px;background:rgba(255,255,255,.2);position:relative;z-index:1; }
+    .af-semblem { width:calc(28px * var(--af-book-scale));height:calc(28px * var(--af-book-scale));border-radius:50%;border:calc(1px * var(--af-book-scale)) solid rgba(255,255,255,.35);position:relative;z-index:1;display:flex;align-items:center;justify-content:center; }
+    .af-semblem::after { content:'';width:calc(6px * var(--af-book-scale));height:calc(6px * var(--af-book-scale));border-radius:50%;background:#c8a96e;display:block; }
+
+    /* ── BOOK SIZES & COLOURS ── */
+    /* Ambient books */
+    #afb-fn { width:54px; height:268px; }
+    #afb-fn .af-b-spine { width:54px;height:268px;background:linear-gradient(162deg,#1a1f2b,#0d1018 55%,#060809);transform:translateZ(75px); }
+    #afb-fn .af-b-top   { width:54px;height:150px;transform:translateY(-75px) rotateX(90deg);border-top:3px solid #0d1018;border-left:4px solid #0d1018;border-right:4px solid #0d1018; }
+    #afb-fn .af-b-right { width:150px;height:268px;transform:translateX(-21px) rotateY(-90deg);border-top:3px solid #0d1018;border-bottom:3px solid #0d1018;border-right:4px solid #0d1018;border-left:2px solid #0d1018; }
+
+    #afb-dz { width:50px; height:282px; }
+    #afb-dz .af-b-spine { width:50px;height:282px;background:linear-gradient(162deg,#2a2e38,#181c24 55%,#0c0e13);transform:translateZ(78px); }
+    #afb-dz .af-b-top   { width:50px;height:156px;transform:translateY(-78px) rotateX(90deg);border-top:3px solid #181c24;border-left:4px solid #181c24;border-right:4px solid #181c24; }
+    #afb-dz .af-b-right { width:156px;height:282px;transform:translateX(-25px) rotateY(-90deg);border-top:3px solid #181c24;border-bottom:3px solid #181c24;border-right:4px solid #181c24;border-left:2px solid #181c24; }
+
+    /* LIVE: Dancing on Jupiter – deep blue */
+    #afb-doj { width:62px; height:302px; }
+    #afb-doj .af-b-spine { width:62px;height:302px;background:linear-gradient(162deg,#1b3d60,#0e2340 55%,#071526);transform:translateZ(84px); }
+    #afb-doj .af-b-top   { width:62px;height:168px;transform:translateY(-84px) rotateX(90deg);border-top:3px solid #10263f;border-left:4px solid #10263f;border-right:4px solid #10263f; }
+    #afb-doj .af-b-right { width:168px;height:302px;transform:translateX(-23px) rotateY(-90deg);border-top:3px solid #10263f;border-bottom:3px solid #10263f;border-right:4px solid #10263f;border-left:2px solid #10263f; }
+    #afb-doj .af-b-glow  { background:radial-gradient(ellipse,rgba(28,85,155,.45),transparent 65%); }
+
+    #afb-pc { width:48px; height:290px; }
+    #afb-pc .af-b-spine { width:48px;height:290px;background:linear-gradient(162deg,#3d2b1a,#271a0e 55%,#140d07);transform:translateZ(79px); }
+    #afb-pc .af-b-top   { width:48px;height:158px;transform:translateY(-79px) rotateX(90deg);border-top:3px solid #271a0e;border-left:4px solid #271a0e;border-right:4px solid #271a0e; }
+    #afb-pc .af-b-right { width:158px;height:290px;transform:translateX(-19px) rotateY(-90deg);border-top:3px solid #271a0e;border-bottom:3px solid #271a0e;border-right:4px solid #271a0e;border-left:2px solid #271a0e; }
+
+    #afb-ms { width:52px; height:306px; }
+    #afb-ms .af-b-spine { width:52px;height:306px;background:linear-gradient(162deg,#1a2e1a,#0e1c0e 55%,#070f07);transform:translateZ(82px); }
+    #afb-ms .af-b-top   { width:52px;height:164px;transform:translateY(-82px) rotateX(90deg);border-top:3px solid #0e1c0e;border-left:4px solid #0e1c0e;border-right:4px solid #0e1c0e; }
+    #afb-ms .af-b-right { width:164px;height:306px;transform:translateX(-19px) rotateY(-90deg);border-top:3px solid #0e1c0e;border-bottom:3px solid #0e1c0e;border-right:4px solid #0e1c0e;border-left:2px solid #0e1c0e; }
+
+    /* LIVE: The Summer of 06 – deep crimson */
+    #afb-s06 { width:56px; height:320px; }
+    #afb-s06 .af-b-spine { width:56px;height:320px;background:linear-gradient(162deg,#3e1b0f,#2b1008 55%,#150805);transform:translateZ(88px); }
+    #afb-s06 .af-b-top   { width:56px;height:176px;transform:translateY(-88px) rotateX(90deg);border-top:3px solid #2d130a;border-left:4px solid #2d130a;border-right:4px solid #2d130a; }
+    #afb-s06 .af-b-right { width:176px;height:320px;transform:translateX(-24px) rotateY(-90deg);border-top:3px solid #2d130a;border-bottom:3px solid #2d130a;border-right:4px solid #2d130a;border-left:2px solid #2d130a; }
+    #afb-s06 .af-b-glow  { background:radial-gradient(ellipse,rgba(155,55,18,.45),transparent 65%); }
+
+    #afb-ar { width:46px; height:274px; }
+    #afb-ar .af-b-spine { width:46px;height:274px;background:linear-gradient(162deg,#1a1f2b,#0d1018 55%,#060809);transform:translateZ(75px); }
+    #afb-ar .af-b-top   { width:46px;height:150px;transform:translateY(-75px) rotateX(90deg);border-top:3px solid #0d1018;border-left:4px solid #0d1018;border-right:4px solid #0d1018; }
+    #afb-ar .af-b-right { width:150px;height:274px;transform:translateX(-17px) rotateY(-90deg);border-top:3px solid #0d1018;border-bottom:3px solid #0d1018;border-right:4px solid #0d1018;border-left:2px solid #0d1018; }
+
+    #afb-sk { width:50px; height:286px; }
+    #afb-sk .af-b-spine { width:50px;height:286px;background:linear-gradient(162deg,#2a2e38,#181c24 55%,#0c0e13);transform:translateZ(78px); }
+    #afb-sk .af-b-top   { width:50px;height:154px;transform:translateY(-78px) rotateX(90deg);border-top:3px solid #181c24;border-left:4px solid #181c24;border-right:4px solid #181c24; }
+    #afb-sk .af-b-right { width:154px;height:286px;transform:translateX(-23px) rotateY(-90deg);border-top:3px solid #181c24;border-bottom:3px solid #181c24;border-right:4px solid #181c24;border-left:2px solid #181c24; }
+
+    /* Crisp scale overrides */
+    #afb-fn { width:calc(54px * var(--af-book-scale)); height:calc(268px * var(--af-book-scale)); }
+    #afb-fn .af-b-spine { width:calc(54px * var(--af-book-scale));height:calc(268px * var(--af-book-scale));transform:translateZ(calc(75px * var(--af-book-scale))); }
+    #afb-fn .af-b-top   { width:calc(54px * var(--af-book-scale));height:calc(150px * var(--af-book-scale));transform:translateY(calc(-75px * var(--af-book-scale))) rotateX(90deg);border-top:calc(3px * var(--af-book-scale)) solid #0d1018;border-left:calc(4px * var(--af-book-scale)) solid #0d1018;border-right:calc(4px * var(--af-book-scale)) solid #0d1018; }
+    #afb-fn .af-b-right { width:calc(150px * var(--af-book-scale));height:calc(268px * var(--af-book-scale));transform:translateX(calc(-21px * var(--af-book-scale))) rotateY(-90deg);border-top:calc(3px * var(--af-book-scale)) solid #0d1018;border-bottom:calc(3px * var(--af-book-scale)) solid #0d1018;border-right:calc(4px * var(--af-book-scale)) solid #0d1018;border-left:calc(2px * var(--af-book-scale)) solid #0d1018; }
+
+    #afb-dz { width:calc(50px * var(--af-book-scale)); height:calc(282px * var(--af-book-scale)); }
+    #afb-dz .af-b-spine { width:calc(50px * var(--af-book-scale));height:calc(282px * var(--af-book-scale));transform:translateZ(calc(78px * var(--af-book-scale))); }
+    #afb-dz .af-b-top   { width:calc(50px * var(--af-book-scale));height:calc(156px * var(--af-book-scale));transform:translateY(calc(-78px * var(--af-book-scale))) rotateX(90deg);border-top:calc(3px * var(--af-book-scale)) solid #181c24;border-left:calc(4px * var(--af-book-scale)) solid #181c24;border-right:calc(4px * var(--af-book-scale)) solid #181c24; }
+    #afb-dz .af-b-right { width:calc(156px * var(--af-book-scale));height:calc(282px * var(--af-book-scale));transform:translateX(calc(-25px * var(--af-book-scale))) rotateY(-90deg);border-top:calc(3px * var(--af-book-scale)) solid #181c24;border-bottom:calc(3px * var(--af-book-scale)) solid #181c24;border-right:calc(4px * var(--af-book-scale)) solid #181c24;border-left:calc(2px * var(--af-book-scale)) solid #181c24; }
+
+    #afb-doj { width:calc(62px * var(--af-book-scale)); height:calc(302px * var(--af-book-scale)); }
+    #afb-doj .af-b-spine { width:calc(62px * var(--af-book-scale));height:calc(302px * var(--af-book-scale));transform:translateZ(calc(84px * var(--af-book-scale))); }
+    #afb-doj .af-b-top   { width:calc(62px * var(--af-book-scale));height:calc(168px * var(--af-book-scale));transform:translateY(calc(-84px * var(--af-book-scale))) rotateX(90deg);border-top:calc(3px * var(--af-book-scale)) solid #10263f;border-left:calc(4px * var(--af-book-scale)) solid #10263f;border-right:calc(4px * var(--af-book-scale)) solid #10263f; }
+    #afb-doj .af-b-right { width:calc(168px * var(--af-book-scale));height:calc(302px * var(--af-book-scale));transform:translateX(calc(-23px * var(--af-book-scale))) rotateY(-90deg);border-top:calc(3px * var(--af-book-scale)) solid #10263f;border-bottom:calc(3px * var(--af-book-scale)) solid #10263f;border-right:calc(4px * var(--af-book-scale)) solid #10263f;border-left:calc(2px * var(--af-book-scale)) solid #10263f; }
+
+    #afb-pc { width:calc(48px * var(--af-book-scale)); height:calc(290px * var(--af-book-scale)); }
+    #afb-pc .af-b-spine { width:calc(48px * var(--af-book-scale));height:calc(290px * var(--af-book-scale));transform:translateZ(calc(79px * var(--af-book-scale))); }
+    #afb-pc .af-b-top   { width:calc(48px * var(--af-book-scale));height:calc(158px * var(--af-book-scale));transform:translateY(calc(-79px * var(--af-book-scale))) rotateX(90deg);border-top:calc(3px * var(--af-book-scale)) solid #271a0e;border-left:calc(4px * var(--af-book-scale)) solid #271a0e;border-right:calc(4px * var(--af-book-scale)) solid #271a0e; }
+    #afb-pc .af-b-right { width:calc(158px * var(--af-book-scale));height:calc(290px * var(--af-book-scale));transform:translateX(calc(-19px * var(--af-book-scale))) rotateY(-90deg);border-top:calc(3px * var(--af-book-scale)) solid #271a0e;border-bottom:calc(3px * var(--af-book-scale)) solid #271a0e;border-right:calc(4px * var(--af-book-scale)) solid #271a0e;border-left:calc(2px * var(--af-book-scale)) solid #271a0e; }
+
+    #afb-ms { width:calc(52px * var(--af-book-scale)); height:calc(306px * var(--af-book-scale)); }
+    #afb-ms .af-b-spine { width:calc(52px * var(--af-book-scale));height:calc(306px * var(--af-book-scale));transform:translateZ(calc(82px * var(--af-book-scale))); }
+    #afb-ms .af-b-top   { width:calc(52px * var(--af-book-scale));height:calc(164px * var(--af-book-scale));transform:translateY(calc(-82px * var(--af-book-scale))) rotateX(90deg);border-top:calc(3px * var(--af-book-scale)) solid #0e1c0e;border-left:calc(4px * var(--af-book-scale)) solid #0e1c0e;border-right:calc(4px * var(--af-book-scale)) solid #0e1c0e; }
+    #afb-ms .af-b-right { width:calc(164px * var(--af-book-scale));height:calc(306px * var(--af-book-scale));transform:translateX(calc(-19px * var(--af-book-scale))) rotateY(-90deg);border-top:calc(3px * var(--af-book-scale)) solid #0e1c0e;border-bottom:calc(3px * var(--af-book-scale)) solid #0e1c0e;border-right:calc(4px * var(--af-book-scale)) solid #0e1c0e;border-left:calc(2px * var(--af-book-scale)) solid #0e1c0e; }
+
+    #afb-s06 { width:calc(56px * var(--af-book-scale)); height:calc(320px * var(--af-book-scale)); }
+    #afb-s06 .af-b-spine { width:calc(56px * var(--af-book-scale));height:calc(320px * var(--af-book-scale));transform:translateZ(calc(88px * var(--af-book-scale))); }
+    #afb-s06 .af-b-top   { width:calc(56px * var(--af-book-scale));height:calc(176px * var(--af-book-scale));transform:translateY(calc(-88px * var(--af-book-scale))) rotateX(90deg);border-top:calc(3px * var(--af-book-scale)) solid #2d130a;border-left:calc(4px * var(--af-book-scale)) solid #2d130a;border-right:calc(4px * var(--af-book-scale)) solid #2d130a; }
+    #afb-s06 .af-b-right { width:calc(176px * var(--af-book-scale));height:calc(320px * var(--af-book-scale));transform:translateX(calc(-24px * var(--af-book-scale))) rotateY(-90deg);border-top:calc(3px * var(--af-book-scale)) solid #2d130a;border-bottom:calc(3px * var(--af-book-scale)) solid #2d130a;border-right:calc(4px * var(--af-book-scale)) solid #2d130a;border-left:calc(2px * var(--af-book-scale)) solid #2d130a; }
+
+    #afb-ar { width:calc(46px * var(--af-book-scale)); height:calc(274px * var(--af-book-scale)); }
+    #afb-ar .af-b-spine { width:calc(46px * var(--af-book-scale));height:calc(274px * var(--af-book-scale));transform:translateZ(calc(75px * var(--af-book-scale))); }
+    #afb-ar .af-b-top   { width:calc(46px * var(--af-book-scale));height:calc(150px * var(--af-book-scale));transform:translateY(calc(-75px * var(--af-book-scale))) rotateX(90deg);border-top:calc(3px * var(--af-book-scale)) solid #0d1018;border-left:calc(4px * var(--af-book-scale)) solid #0d1018;border-right:calc(4px * var(--af-book-scale)) solid #0d1018; }
+    #afb-ar .af-b-right { width:calc(150px * var(--af-book-scale));height:calc(274px * var(--af-book-scale));transform:translateX(calc(-17px * var(--af-book-scale))) rotateY(-90deg);border-top:calc(3px * var(--af-book-scale)) solid #0d1018;border-bottom:calc(3px * var(--af-book-scale)) solid #0d1018;border-right:calc(4px * var(--af-book-scale)) solid #0d1018;border-left:calc(2px * var(--af-book-scale)) solid #0d1018; }
+
+    #afb-sk { width:calc(50px * var(--af-book-scale)); height:calc(286px * var(--af-book-scale)); }
+    #afb-sk .af-b-spine { width:calc(50px * var(--af-book-scale));height:calc(286px * var(--af-book-scale));transform:translateZ(calc(78px * var(--af-book-scale))); }
+    #afb-sk .af-b-top   { width:calc(50px * var(--af-book-scale));height:calc(154px * var(--af-book-scale));transform:translateY(calc(-78px * var(--af-book-scale))) rotateX(90deg);border-top:calc(3px * var(--af-book-scale)) solid #181c24;border-left:calc(4px * var(--af-book-scale)) solid #181c24;border-right:calc(4px * var(--af-book-scale)) solid #181c24; }
+    #afb-sk .af-b-right { width:calc(154px * var(--af-book-scale));height:calc(286px * var(--af-book-scale));transform:translateX(calc(-23px * var(--af-book-scale))) rotateY(-90deg);border-top:calc(3px * var(--af-book-scale)) solid #181c24;border-bottom:calc(3px * var(--af-book-scale)) solid #181c24;border-right:calc(4px * var(--af-book-scale)) solid #181c24;border-left:calc(2px * var(--af-book-scale)) solid #181c24; }
+
+    /* ── OVERLAY ── */
+    @media (max-width: 980px) {
+      #af-books { width:min(100%, 1040px); gap:12px; padding:0 18px; }
+      #af-shelf-wrap { --af-book-scale:1.36; }
+    }
+
+    @media (max-width: 720px) {
+      #af-books { gap:6px; padding:0 10px; }
+      #af-shelf-board { height:18px; }
+      #af-shelf-board::before { top:2px; }
+      #af-shelf-wrap { --af-book-scale:0.92; }
+    }
+
+    #af-overlay { position:fixed;inset:0;z-index:5000;pointer-events:none; }
+    #af-obg { position:absolute;inset:0;background:rgba(4,3,2,0);transition:background 0.5s ease; }
+    #af-fly {
+      display:none; position:absolute;
+      transform-style:preserve-3d;
+      perspective:1000px;
+    }
+    .af-fp {
+      position:absolute; top:0; left:0;
+      box-sizing:border-box;
+      transform-origin:left center;
+      transform-style:preserve-3d;
+      border-radius:0 2px 2px 0;
+    }
+    .af-fp-page {
+      background:linear-gradient(90deg,#d8d4bc 0%,#eae6d0 4%,#f4f0dc 100%);
+      box-shadow:inset -6px 0 18px rgba(0,0,0,.1),2px 0 6px rgba(0,0,0,.08);
+    }
+    .af-fp-cover-wrap { backface-visibility:visible; }
+    .af-fp-cover-front {
+      position:absolute; inset:0;
+      backface-visibility:hidden;
+      border-radius:0 2px 2px 0;
+      box-shadow:-6px 0 28px rgba(0,0,0,.65),0 4px 16px rgba(0,0,0,.35);
+      border-left:9px solid rgba(0,0,0,.6);
+    }
+    .af-fp-cover-back {
+      position:absolute; inset:0;
+      backface-visibility:hidden;
+      transform:rotateY(-180deg);
+      border-radius:2px 0 0 2px;
+      background:linear-gradient(90deg,#2a2018 0%,#221c16 40%,#1a1410 100%);
+      box-shadow:inset -4px 0 20px rgba(0,0,0,.8),inset 2px 0 8px rgba(0,0,0,.4);
+    }
+    .af-fp-rpage {
+      position:absolute; top:0;
+      box-sizing:border-box;
+      border-radius:0 2px 2px 0;
+      background:linear-gradient(90deg,#d0ccb4 0%,#eae6d0 5%,#f5f1de 100%);
+      box-shadow:inset -6px 0 18px rgba(0,0,0,.1);
+      padding:18px 14px;
+    }
+    .af-fp-rpage::before,.af-fp-rpage::after { display:block;content:"";border-top:1px dashed rgba(0,0,0,.18);padding-bottom:1.2em; }
+    .af-fp-crease {
+      position:absolute; top:0; width:10px;
+      pointer-events:none; z-index:200;
+      background:linear-gradient(90deg,rgba(0,0,0,.55) 0%,rgba(0,0,0,.08) 100%);
+    }
+    @keyframes af-openCover  { 30%{z-index:20} 100%{transform:rotateY(-180deg);z-index:1} }
+    @keyframes af-openPage   { 30%{z-index:20} 100%{transform:rotateY(-180deg);z-index:20} }
+    @keyframes af-openPage150{ 30%{z-index:20} 100%{transform:rotateY(-150deg);z-index:20} }
+    @keyframes af-openPage55 { 30%{z-index:20} 100%{transform:rotateY(-55deg);z-index:20} }
+    @keyframes af-openPage30 { 50%{z-index:20} 100%{transform:rotateY(-30deg);z-index:20} }
+    .af-pt { position:fixed;width:2px;height:2px;background:#c8a96e;border-radius:50%;pointer-events:none;z-index:9000;animation:af-pf var(--d) var(--dl) ease-out forwards; }
+    @keyframes af-pf { 0%{opacity:.9;transform:translate(0,0)} 100%{opacity:0;transform:translate(var(--x),var(--y))} }
+    </style>
+
+    <script>
+    /* ── AF SHELF — runs after DOM ready ── */
+    (function(){
+      /* ── PARALLAX on shelf wrap ── */
+      const sw = document.getElementById('af-shelf-wrap');
+      let tY=0,tX=0,cY=0,cX=0,plocked=false;
+      document.addEventListener('mousemove',e=>{
+        if(plocked)return;
+        tY=((e.clientX-window.innerWidth/2)/window.innerWidth)*2.4;
+        tX=-((e.clientY-window.innerHeight/2)/window.innerHeight)*1.35;
+      });
+      (function ap(){
+        if(!plocked){cY+=(tY-cY)*.09;cX+=(tX-cX)*.09;sw.style.transform=`rotateY(${cY}deg) rotateX(${cX}deg)`;}
+        requestAnimationFrame(ap);
+      })();
+
+      /* ── Cursor enlarge on hover ── */
+      document.querySelectorAll('.af-book--featured,#af-obg').forEach(el=>{
+        el.addEventListener('mouseenter',()=>document.body.classList.add('af-h'));
+        el.addEventListener('mouseleave',()=>document.body.classList.remove('af-h'));
+      });
+
+      /* ── BOOK DATA ── */
+      const DATA = {
+        doj:{ color:'linear-gradient(162deg,#1b3d60,#0e2340 55%,#071526)', bc:'#10263f', W:62, H:302, D:168 },
+        s06:{ color:'linear-gradient(162deg,#3e1b0f,#2b1008 55%,#150805)', bc:'#2d130a', W:56, H:320, D:176 }
+      };
+
+      /* ── OPEN ANIMATION ── */
+      let busy=false, navTimer, navCommitTimer;
+      const overlay = document.getElementById('af-overlay');
+      const obg     = document.getElementById('af-obg');
+      const fly     = document.getElementById('af-fly');
+      const wait    = ms => new Promise(r=>setTimeout(r,ms));
+
+      document.querySelectorAll('.af-book--featured').forEach(book=>{
+        book.addEventListener('click', async e=>{
+          if(busy)return;
+          busy=true; plocked=true;
+          book.classList.add('af-locked');
+          document.body.classList.remove('af-h');
+
+          const id = book.dataset.id;
+          const d  = DATA[id];
+          const href = book.dataset.href;
+          const spineEl = book.querySelector('.af-b-spine');
+          const r  = spineEl.getBoundingClientRect();
+          const W  = Math.round(r.width);
+          const H  = Math.round(r.height);
+          const PW = Math.round(H*0.65);
+          const DUR=2.2, SCALE=1.25;
+          const STRAIGHTEN_MS = 320;
+          const FLOAT_MS = 460;
+          const NAV_LEAD_MS = 240;
+          const NAV_COMMIT_MS = 140;
+
+          fly.innerHTML='';
+
+          /* Right page */
+          const rpage=document.createElement('div');
+          rpage.className='af-fp-rpage';
+          rpage.style.cssText=`width:${PW}px;height:${H}px;left:0;z-index:2;`;
+          fly.appendChild(rpage);
+
+          /* Fanning pages */
+          const pageAnims  =['af-openPage','af-openPage','af-openPage','af-openPage150','af-openPage30','af-openPage55'];
+          const pageDelays =[0.05,0.18,0.33,0.50,0.65,0.72];
+          for(let i=0;i<6;i++){
+            const pg=document.createElement('div');
+            pg.className='af-fp af-fp-page';
+            pg.style.cssText=`width:${PW}px;height:${H}px;z-index:${5+i};background:linear-gradient(90deg,#d0ccb8 0%,#e8e4ce 4%,#f2eeda 100%);animation:${pageAnims[i]} ${DUR}s cubic-bezier(.4,0,.2,1) forwards;animation-delay:${pageDelays[i]}s;animation-play-state:paused;`;
+            fly.appendChild(pg);
+          }
+
+          /* Cover */
+          const coverWrap=document.createElement('div');
+          coverWrap.className='af-fp af-fp-cover-wrap';
+          coverWrap.style.cssText=`width:${PW}px;height:${H}px;z-index:10;animation:af-openCover ${DUR}s cubic-bezier(.4,0,.2,1) forwards;animation-play-state:paused;`;
+          const coverFront=document.createElement('div');
+          coverFront.className='af-fp-cover-front';
+          coverFront.style.background=d.color;
+          coverFront.innerHTML=`<div style="position:absolute;inset:0;padding:20px 18px;display:flex;flex-direction:column;justify-content:center;gap:7px;"><div style="font-family:'Bebas Neue',sans-serif;font-size:22px;letter-spacing:.1em;color:rgba(255,255,255,.92);line-height:1.1;">${book.querySelector('.af-stitle').textContent}</div><div style="font-family:'Cormorant Garamond',serif;font-size:10px;letter-spacing:.22em;color:rgba(255,255,255,.38);">${book.querySelector('.af-syear').textContent}</div><div style="position:absolute;bottom:18px;right:16px;width:22px;height:22px;border-radius:50%;border:1px solid rgba(255,255,255,.25);display:flex;align-items:center;justify-content:center;"><div style="width:5px;height:5px;border-radius:50%;background:#c8a96e;"></div></div></div>`;
+          const coverBack=document.createElement('div');
+          coverBack.className='af-fp-cover-back';
+          coverWrap.appendChild(coverFront);
+          coverWrap.appendChild(coverBack);
+          fly.appendChild(coverWrap);
+
+          /* Crease */
+          const crease=document.createElement('div');
+          crease.className='af-fp-crease';
+          crease.style.cssText=`height:${H}px;left:0;`;
+          fly.appendChild(crease);
+
+          /* Position fly */
+          const spineScreenX=r.left+W/2;
+          fly.style.cssText=`display:block;position:absolute;width:${PW*2}px;height:${H}px;left:${spineScreenX-PW}px;top:${r.top}px;transform:rotateX(-38deg);transition:none;opacity:1;`;
+
+          book.style.opacity='0';
+          overlay.style.pointerEvents='all';
+          afSpawnParticles(e.clientX,e.clientY);
+          fly.offsetHeight;
+
+          /* Phase 1 — Straighten */
+          fly.style.transition='transform 0.32s cubic-bezier(0.25,0.46,0.45,0.94)';
+          fly.style.transform='rotateX(0deg)';
+          await wait(STRAIGHTEN_MS);
+
+          /* Phase 2 — Float to center */
+          obg.style.background='rgba(4,3,2,0.93)';
+          const destLeft=window.innerWidth/2-PW;
+          const destTop =window.innerHeight/2-H/2;
+          fly.style.transition='transform 0.44s cubic-bezier(0.16,1,0.3,1)';
+          fly.style.transform=`translate(${destLeft-(spineScreenX-PW)}px,${destTop-r.top}px) scale(${SCALE})`;
+          await wait(FLOAT_MS);
+
+          /* Phase 3 — Fan open */
+          fly.querySelectorAll('.af-fp,.af-fp-cover-wrap').forEach(el=>el.style.animationPlayState='running');
+
+          /* Phase 4 — Navigate */
+          navTimer=setTimeout(()=>{
+            obg.style.background='rgba(0,0,0,1)';
+            fly.style.transition='opacity 0.42s ease';
+            fly.style.opacity='0';
+            navCommitTimer=setTimeout(()=>{ if(href) window.location.href=href; },NAV_COMMIT_MS);
+          },Math.max(320,(DUR*1000)-NAV_LEAD_MS));
+        });
+      });
+
+      /* ── CLOSE / RESET ── */
+      function afClose(){
+        if(!busy)return;
+        clearTimeout(navTimer);
+        clearTimeout(navCommitTimer);
+        obg.style.background='rgba(4,3,2,0)';
+        fly.style.transition='opacity 0.25s ease';
+        fly.style.opacity='0';
+        setTimeout(()=>{
+          fly.style.cssText='display:none';
+          fly.innerHTML='';
+          overlay.style.pointerEvents='none';
+          navTimer=undefined;
+          navCommitTimer=undefined;
+          busy=false; plocked=false;
+          document.querySelectorAll('.af-book--featured').forEach(b=>{
+            b.classList.remove('af-locked');
+            b.style.opacity='';
+          });
+        },280);
+      }
+      obg.addEventListener('click',afClose);
+      document.addEventListener('keydown',e=>{ if(e.key==='Escape') afClose(); });
+
+      function afSpawnParticles(x,y){
+        for(let i=0;i<14;i++){
+          const p=document.createElement('div'); p.className='af-pt';
+          const a=(Math.PI*2*i)/14, dist=45+Math.random()*70;
+          p.style.setProperty('--x',Math.cos(a)*dist+'px');
+          p.style.setProperty('--y',Math.sin(a)*dist+'px');
+          p.style.setProperty('--d',(0.6+Math.random()*.5)+'s');
+          p.style.setProperty('--dl',(Math.random()*.12)+'s');
+          p.style.left=x+'px'; p.style.top=y+'px';
+          document.body.appendChild(p);
+          setTimeout(()=>p.remove(),1300);
+        }
+      }
+    })();
+    </script>
+
+    <section class="scene-section scene-section--works" id="works-section">
+      <div class="scene-panel">
+        <div class="scene-layer scene-layer--grid scene-layer--soft" data-depth="-12" aria-hidden="true"></div>
+        <div class="section-wipe section-wipe--works" data-depth="16" aria-hidden="true">
+          <span class="section-wipe__line"></span>
+          <span class="section-wipe__dot"></span>
+          <span class="section-wipe__geo"></span>
+        </div>
+        <div class="shell">
+          <div class="section-head section-head--minimal" data-depth="-8">
             <div>
-              <div class="section-head__kicker">Interactive writing shelf</div>
-              <h2 class="section-head__title">Pull a book out, click it, and let it open into its own page.</h2>
+              <div class="section-head__kicker">Selected Worlds</div>
+              <h2 class="section-head__title">VERVE / CHERIFLIX / BOOKLI / Tasmanian Made / VanVakarnee</h2>
             </div>
-            <p class="bookshelf__copy">This is the interaction you asked for: the books live on a shelf first, they pull out on hover, and the click now triggers a real open-book transition before taking you into the detail page.</p>
           </div>
 
-          <div class="bookshelf__stage">
-            <div class="bookshelf__books" aria-label="Featured books">
-              <a class="shelf-book theme-jupiter" href="dancing-on-jupiter.html" data-book-link data-book-slug="dancing-on-jupiter" data-book-title="Dancing on Jupiter" data-book-meta="Book One" data-book-base="#5f34f5" data-book-edge="#140a33">
-                <span class="shelf-book__hint">Pull / open</span>
-                <span class="shelf-book__shadow" aria-hidden="true"></span>
-                <span class="shelf-book__body" data-book-visual>
-                  <span class="shelf-book__spine">
-                    <span class="shelf-book__spine-label">Dancing on Jupiter</span>
-                    <span class="shelf-book__spine-meta">Book One</span>
-                  </span>
-                  <span class="shelf-book__face">
-                    <span class="shelf-book__genre">Featured book</span>
-                    <span class="shelf-book__title">Dancing on Jupiter</span>
-                    <span class="shelf-book__cta">Click to open</span>
-                  </span>
-                  <span class="shelf-book__pages" aria-hidden="true"></span>
-                </span>
-              </a>
+          <div class="spotlight-grid" data-depth="14">
+            <a class="spotlight-card" href="writing.html" data-reveal data-transition-label="Writing">
+              <div class="spotlight-card__media book-card__cover theme-jupiter">
+                <div class="book-card__cover-inner">
+                  <small class="micro-label">Writing</small>
+                  <div class="book-card__cover-title">Dancing on Jupiter / The Summer of 06</div>
+                  <small class="micro-label">Live pages</small>
+                </div>
+              </div>
+              <h3 class="spotlight-card__title">Two live novels, one shelf entrance.</h3>
+              <p class="spotlight-card__copy">The writing side starts with the shelf, then opens into separate book pages with their own visual identity and path forward.</p>
+              <div class="tag-row">
+                <span class="tag">Books</span>
+                <span class="tag">Shelf</span>
+                <span class="tag">Amazon</span>
+              </div>
+            </a>
 
-              <a class="shelf-book theme-summer" href="summer-of-06.html" data-book-link data-book-slug="the-summer-of-06" data-book-title="The Summer of 06" data-book-meta="Book Two" data-book-base="#f47f42" data-book-edge="#2c1208">
-                <span class="shelf-book__hint">Pull / open</span>
-                <span class="shelf-book__shadow" aria-hidden="true"></span>
-                <span class="shelf-book__body" data-book-visual>
-                  <span class="shelf-book__spine">
-                    <span class="shelf-book__spine-label">The Summer of 06</span>
-                    <span class="shelf-book__spine-meta">Book Two</span>
-                  </span>
-                  <span class="shelf-book__face">
-                    <span class="shelf-book__genre">Featured book</span>
-                    <span class="shelf-book__title">The Summer of 06</span>
-                    <span class="shelf-book__cta">Click to open</span>
-                  </span>
-                  <span class="shelf-book__pages" aria-hidden="true"></span>
-                </span>
-              </a>
-            </div>
-            <div class="bookshelf__rail" aria-hidden="true"></div>
+            <a class="spotlight-card" href="apps.html" data-reveal data-transition-label="Apps">
+              <div class="spotlight-card__media spotlight-card__media--verve">
+                <div class="ui-mock">
+                  <div class="ui-mock__line mid"></div>
+                  <div class="ui-mock__line short"></div>
+                  <div class="ui-mock__block"></div>
+                </div>
+              </div>
+              <h3 class="spotlight-card__title">VERVE / CHERIFLIX / BOOKLI</h3>
+              <p class="spotlight-card__copy">Three fully functional product builds spanning music, streaming, and AI-assisted writing.</p>
+              <div class="tag-row">
+                <span class="tag">Qobuz</span>
+                <span class="tag">Deezer</span>
+                <span class="tag">TMDB</span>
+                <span class="tag">Claude / ChatGPT</span>
+              </div>
+            </a>
+
+            <a class="spotlight-card" href="photography.html" data-reveal data-transition-label="Photography">
+              <div class="spotlight-card__media spotlight-card__media--tasmania"></div>
+              <h3 class="spotlight-card__title">Tasmanian Made</h3>
+              <p class="spotlight-card__copy">Storm light, coastlines, wet forest, and city frames pushed toward atmosphere rather than travel-gallery polish.</p>
+              <div class="tag-row">
+                <span class="tag">Storm light</span>
+                <span class="tag">Coast</span>
+                <span class="tag">Forest</span>
+                <span class="tag">After rain</span>
+              </div>
+            </a>
+
+            <a class="spotlight-card" href="prints.html" data-reveal data-transition-label="Prints">
+              <div class="spotlight-card__media spotlight-card__media--prints"></div>
+              <h3 class="spotlight-card__title">VanVakarnee</h3>
+              <p class="spotlight-card__copy">The print destination for the physical side of the work, linking photography, product, and collectible output.</p>
+              <div class="tag-row">
+                <span class="tag">Prints</span>
+                <span class="tag">Art store</span>
+                <span class="tag">Physical work</span>
+              </div>
+            </a>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="shell">
-        <div class="section-head">
-          <div>
-            <div class="section-head__kicker">Main sections</div>
-            <h2 class="section-head__title">Everything now has its own animated lane.</h2>
-          </div>
-          <p class="section-head__copy">Instead of flattening every medium into one long minimal page, the portfolio now splits the work into distinct destinations and gives each one enough motion and atmosphere to feel premium.</p>
-        </div>
-
-        <div class="spotlight-grid">
-          <a class="spotlight-card" href="writing.html" data-reveal data-tilt data-transition-label="Writing">
-            <div class="spotlight-card__media book-card__cover theme-jupiter"><div class="book-card__cover-inner"><small class="micro-label">Writing</small><div class="book-card__cover-title">Two books, each with its own page.</div></div></div>
-            <div class="section-head__kicker">Writing</div>
-            <h3 class="spotlight-card__title">Dancing on Jupiter and The Summer of 06</h3>
-            <p class="spotlight-card__copy">A writing overview page plus dedicated detail pages, all connected back to the shelf interaction.</p>
-          </a>
-
-          <a class="spotlight-card" href="apps.html" data-reveal data-tilt data-transition-label="Apps">
-            <div class="spotlight-card__media spotlight-card__media--verve"><div class="ui-mock"><div class="ui-mock__line mid"></div><div class="ui-mock__line short"></div><div class="ui-mock__block"></div></div></div>
-            <div class="section-head__kicker">Apps</div>
-            <h3 class="spotlight-card__title">VERVE, CHERIFLIX, BOOKLI</h3>
-            <p class="spotlight-card__copy">Three real products, each framed like a premium launch page instead of a generic app card.</p>
-          </a>
-
-          <a class="spotlight-card" href="photography.html" data-reveal data-tilt data-transition-label="Photography">
-            <div class="spotlight-card__media spotlight-card__media--tasmania"></div>
-            <div class="section-head__kicker">Photography</div>
-            <h3 class="spotlight-card__title">Tasmania as a visual world, not just a gallery.</h3>
-            <p class="spotlight-card__copy">Landscape, coast, forest, and city atmospheres shot in Tasmania and positioned as part of the wider creative portfolio.</p>
-          </a>
-
-          <a class="spotlight-card" href="prints.html" data-reveal data-tilt data-transition-label="Prints">
-            <div class="spotlight-card__media spotlight-card__media--bookli"><div class="ui-mock"><div class="ui-mock__line mid"></div><div class="ui-mock__block"></div><div class="ui-mock__line short"></div></div></div>
-            <div class="section-head__kicker">Prints</div>
-            <h3 class="spotlight-card__title">VanVakarnee.com as the print and product destination.</h3>
-            <p class="spotlight-card__copy">A dedicated page for the store direction, art print positioning, and the bridge between photography and product.</p>
-          </a>
         </div>
       </div>
     </section>
@@ -220,13 +834,19 @@
 
   <footer class="site-footer">
     <div class="shell site-footer__inner">
-      <span>Dark animated portfolio / books, apps, Tasmania, prints</span>
-      <div class="site-footer__links">
-        <a href="writing.html">Writing</a>
-        <a href="apps.html">Apps</a>
-        <a href="photography.html">Photography</a>
-        <a href="prints.html">Prints</a>
-        <a href="contact.html">Contact</a>
+      <div class="site-footer__lead">
+        <div class="site-footer__eyebrow">Alexander Foster</div>
+        <p class="site-footer__tagline">Books, apps, Tasmanian-made image-making, and print worlds built with a darker cinematic edge.</p>
+      </div>
+      <div class="site-footer__meta">
+        <span class="site-footer__note">Based in Tasmania and open to writing, product, and visual collaborations.</span>
+        <div class="site-footer__links">
+          <a href="writing.html">Writing</a>
+          <a href="apps.html">Apps</a>
+          <a href="photography.html">Photography</a>
+          <a href="prints.html">Prints</a>
+          <a href="contact.html">Contact</a>
+        </div>
       </div>
     </div>
   </footer>

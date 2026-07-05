@@ -1,0 +1,165 @@
+import os
+
+template = """<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{TITLE} | Alexander Foster</title>
+  <meta name="description" content="Photo feature for {TITLE}.">
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollTrigger.min.js"></script>
+  <script defer src="https://unpkg.com/lenis@1.3.15/dist/lenis.min.js"></script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script defer src="assets/js/site.js"></script>
+</head>
+<body data-page="photography" data-photo-title="{TITLE}">
+  <div class="noise" aria-hidden="true"></div>
+  <div class="ambient ambient--one" aria-hidden="true"></div>
+  <div class="ambient ambient--two" aria-hidden="true"></div>
+  <div class="ambient ambient--three" aria-hidden="true"></div>
+  <div class="page-transition" id="page-transition" aria-hidden="true"><span>{TITLE}</span></div>
+  <div class="progress-line" id="progress-line" aria-hidden="true"></div>
+  <div class="cursor-dot" id="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" id="cursor-ring" aria-hidden="true"></div>
+  <div class="cursor-blob" id="cursor-blob" aria-hidden="true"></div>
+
+  <header class="site-header" id="site-header">
+    <div class="shell site-header__inner">
+      <a class="brand" href="index.html" data-transition-label="Home">
+        <span class="brand__monogram">AF</span>
+        <span class="brand__text">
+          <span class="brand__name">Alexander Foster</span>
+          <span class="brand__label">Writing / Apps / Tasmania</span>
+        </span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="writing.html" data-nav="writing">Writing</a>
+        <a href="apps.html" data-nav="apps">Apps</a>
+        <a href="photography.html" data-nav="photography">Photography</a>
+        <a href="prints.html" data-nav="prints">Prints</a>
+        <a href="contact.html" data-nav="contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-shell">
+    <section class="page-hero">
+      <div class="shell book-detail-hero__grid">
+        <div>
+          <div class="page-hero__header">
+            <div>
+              <div class="section-head__kicker" data-reveal>{KICKER}</div>
+              <h1 class="book-detail-hero__title" data-reveal>{TITLE}</h1>
+            </div>
+          </div>
+          <p class="page-hero__copy" data-reveal>{DESC}</p>
+          <div class="tag-row" data-reveal>
+            <span class="tag">Nature Focus</span>
+            <span class="tag">Tasmania Archive</span>
+            <span class="tag">Exclusive Prints</span>
+          </div>
+          <div class="book-detail-hero__actions" data-reveal>
+            <a class="button button--primary" href="https://vanvakarnee.com" target="_blank" rel="noreferrer">View on VanVakarnee.com</a>
+            <a class="button button--ghost" href="photography.html" data-transition-label="Photography">Back to photography</a>
+          </div>
+        </div>
+        <div>
+          <div class="gallery-card__visual {VISUAL_CLASS}" style="position:relative; width: 100%; min-height: 500px; border-radius: 20px; border: 1px solid rgba(255, 255, 255, 0.08); box-shadow: var(--shadow-lg);" data-reveal>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="marquee-band">
+      <div class="marquee-track">
+        <span><b>{TITLE_UPPER}</b> NATURE / TEXTURE / LIGHT / FORMS</span>
+        <span><b>{TITLE_UPPER}</b> NATURE / TEXTURE / LIGHT / FORMS</span>
+      </div>
+    </div>
+    
+    <section class="section">
+      <div class="shell detail-grid">
+        <div class="detail-panel" data-reveal>
+          <strong>Presentation</strong>
+          <p>This image is captured with a distinct appreciation for subtle detail and structure. Designed not just for standard viewing, but to hold up structurally as a physical piece on the wall.</p>
+        </div>
+        <div class="detail-panel" data-reveal>
+          <strong>Availability</strong>
+          <p>Offered directly through VanVakarnee as part of the broader portfolio of art prints. Perfect as an isolated piece or grouped among other complementary nature prints.</p>
+        </div>
+        <div class="detail-panel" data-reveal>
+          <strong>The Store Element</strong>
+          <p>By connecting the original imagery to an actual store platform, these pages eliminate the dead end of a gallery, making the work purchasable instantly.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell site-footer__inner">
+      <span>{TITLE} / Photography Detail</span>
+      <div class="site-footer__links">
+        <a href="photography.html">Photography</a>
+        <a href="writing.html">Writing</a>
+        <a href="apps.html">Apps</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+"""
+
+pages = [
+  {
+    "file": "photo-calendula.html",
+    "title": "Morning Calendula",
+    "kicker": "Flora Study",
+    "desc": "A close study of vibrant yellows and deep oranges, capturing the fine texture of the petals. Available as a premium print at VanVakarnee.",
+    "visualClass": "gallery-card__visual--yellow-flower"
+  },
+  {
+    "file": "photo-bee-one.html",
+    "title": "Pollinator's Canvas",
+    "kicker": "Macro Fauna",
+    "desc": "Macro photography focusing on a bee deep inside the center of a summer squash blossom. Explore natural prints.",
+    "visualClass": "gallery-card__visual--bee-one"
+  },
+  {
+    "file": "photo-bee-two.html",
+    "title": "Golden Gathering",
+    "kicker": "Macro Fauna",
+    "desc": "An alternative perspective on the solitary bee, set against the bright yellow floral walls. Available as art via VanVakarnee.",
+    "visualClass": "gallery-card__visual--bee-two"
+  },
+  {
+    "file": "photo-nasturtium.html",
+    "title": "Orange Nasturtium",
+    "kicker": "Flora Contrast",
+    "desc": "A vivid orange blossom emerging dramatically from deep, cinematic shadow. Bring the colors to life with a real print.",
+    "visualClass": "gallery-card__visual--nasturtium"
+  },
+  {
+    "file": "photo-butterfly.html",
+    "title": "Cabbage White",
+    "kicker": "Fauna Study",
+    "desc": "A delicate white butterfly resting calmly against the structured veins of a broad green leaf.",
+    "visualClass": "gallery-card__visual--butterfly"
+  }
+]
+
+for p in pages:
+    content = template.replace("{TITLE}", p["title"]) \
+                      .replace("{TITLE_UPPER}", p["title"].upper()) \
+                      .replace("{KICKER}", p["kicker"]) \
+                      .replace("{DESC}", p["desc"]) \
+                      .replace("{VISUAL_CLASS}", p["visualClass"])
+    with open(p["file"], "w", encoding="utf-8") as f:
+        f.write(content)
+
+print("Generation complete")

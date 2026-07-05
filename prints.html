@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Prints | Portfolio</title>
+  <title>Prints | Alexander Foster</title>
   <meta name="description" content="Prints and store direction connected to VanVakarnee.com.">
   <script>document.documentElement.classList.add('js');</script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,6 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollTrigger.min.js"></script>
+  <script defer src="https://unpkg.com/lenis@1.3.15/dist/lenis.min.js"></script>
   <link rel="stylesheet" href="assets/css/styles.css">
   <script defer src="assets/js/site.js"></script>
 </head>
@@ -28,10 +29,10 @@
   <header class="site-header" id="site-header">
     <div class="shell site-header__inner">
       <a class="brand" href="index.html" data-transition-label="Home">
-        <span class="brand__monogram">CV</span>
+        <span class="brand__monogram">AF</span>
         <span class="brand__text">
-          <span class="brand__name">Portfolio</span>
-          <span class="brand__label">Books / Apps / Tasmania</span>
+          <span class="brand__name">Alexander Foster</span>
+          <span class="brand__label">Writing / Apps / Tasmania</span>
         </span>
       </a>
       <nav class="site-nav" aria-label="Primary">
@@ -55,7 +56,7 @@
               <h1 class="page-hero__title" data-reveal>VanVakarnee turns the photography into product.</h1>
             </div>
           </div>
-          <p class="page-hero__copy" data-reveal>This page connects the dark portfolio world to the print store. It positions VanVakarnee.com as the destination for art prints and other physical pieces, so the site feels broader than a simple gallery.</p>
+          <p class="page-hero__copy" data-reveal>VanVakarnee is the store path for Tasmania photography, art prints, and the physical side of the work. It provides a direct route for the photography to exist beyond images on a screen.</p>
         </div>
         <div class="panel" data-reveal>
           <div class="micro-label">Store path</div>
@@ -70,25 +71,100 @@
 
     <section class="section">
       <div class="shell prints-grid">
-        <article class="print-card print-card--one" data-reveal data-tilt>
-          <div class="print-card__visual print-card__visual--ember"></div>
-          <div class="section-head__kicker">Print direction</div>
-          <h2 class="gallery-card__title">Dark landscape editions</h2>
-          <p class="gallery-card__copy">Atmospheric Tasmania scenes positioned as framed art rather than travel prints.</p>
+        <article class="print-card" style="grid-column: span 4;" data-reveal data-tilt>
+          <div class="print-card__visual" style="background: url('assets/images/Veil%20of%20Apostles%20MOCKED%20ON%20BARN%20FLOOR.png') center/cover no-repeat; min-height: 280px; border-radius: 22px; border: 1px solid rgba(255, 255, 255, 0.08); margin-bottom: 1rem;"></div>
+          <div class="section-head__kicker">Handmade Original</div>
+          <h2 class="gallery-card__title" style="margin-bottom: 0.5rem; font-size: 1.25rem;">Veil of Apostles</h2>
+          <p class="gallery-card__copy" style="margin-bottom: 1.5rem;">Atmospheric, handcrafted artwork bringing deep mood to any space.</p>
+          <a class="button button--ghost" href="https://vanvakarnee.com/shop-art-prints/" target="_blank" rel="noreferrer" style="width: 100%; text-align: center; justify-content: center; display: flex;">View in Shop</a>
         </article>
 
-        <article class="print-card print-card--two" data-reveal data-tilt>
-          <div class="print-card__visual print-card__visual--mist"></div>
-          <div class="section-head__kicker">Print direction</div>
-          <h2 class="gallery-card__title">Mist and coast series</h2>
-          <p class="gallery-card__copy">Cooler, quieter pieces that lean into open space, distance, and weather.</p>
+        <article class="print-card" style="grid-column: span 4;" data-reveal data-tilt>
+          <div class="print-card__visual" style="background: url('assets/images/Weathered%20Edge%20MOCKED%20ON%20FLOOR%20NEAR%20WINDOW.png') center/cover no-repeat; min-height: 280px; border-radius: 22px; border: 1px solid rgba(255, 255, 255, 0.08); margin-bottom: 1rem;"></div>
+          <div class="section-head__kicker">Handmade Original</div>
+          <h2 class="gallery-card__title" style="margin-bottom: 0.5rem; font-size: 1.25rem;">Weathered Edge</h2>
+          <p class="gallery-card__copy" style="margin-bottom: 1.5rem;">A textured, handcrafted piece with worn, natural characteristics.</p>
+          <a class="button button--ghost" href="https://vanvakarnee.com/shop-art-prints/" target="_blank" rel="noreferrer" style="width: 100%; text-align: center; justify-content: center; display: flex;">View in Shop</a>
         </article>
 
-        <article class="print-card print-card--three" data-reveal data-tilt>
-          <div class="print-card__visual print-card__visual--dawn"></div>
-          <div class="section-head__kicker">Print direction</div>
-          <h2 class="gallery-card__title">Warm light study</h2>
-          <p class="gallery-card__copy">Pieces built around dawn, dry tones, and the slower, warmer edge of the Tasmania catalogue.</p>
+        <article class="print-card" style="grid-column: span 4;" data-reveal data-tilt>
+          <div class="print-card__visual" style="background: url('assets/images/a_hanging_bouquet_of_flowers%20MOCKED%20IN%20SCANDINAVIAN%20LVIING%20ROOM.png') center/cover no-repeat; min-height: 280px; border-radius: 22px; border: 1px solid rgba(255, 255, 255, 0.08); margin-bottom: 1rem;"></div>
+          <div class="section-head__kicker">1800s Reproduction</div>
+          <h2 class="gallery-card__title" style="margin-bottom: 0.5rem; font-size: 1.25rem;">A Hanging Bouquet of Flowers</h2>
+          <p class="gallery-card__copy" style="margin-bottom: 1.5rem;">A classic restored 1800s piece bringing vintage floral charm to modern walls.</p>
+          <a class="button button--ghost" href="https://vanvakarnee.com/shop-art-prints/" target="_blank" rel="noreferrer" style="width: 100%; text-align: center; justify-content: center; display: flex;">View in Shop</a>
+        </article>
+
+        <article class="print-card" style="grid-column: span 4;" data-reveal data-tilt>
+          <div class="print-card__visual" style="background: url('assets/images/a_quiet_day_near_manchester%20MOCKED%20IN%20BOHO%20LIVING%20ROOM.png') center/cover no-repeat; min-height: 280px; border-radius: 22px; border: 1px solid rgba(255, 255, 255, 0.08); margin-bottom: 1rem;"></div>
+          <div class="section-head__kicker">1800s Reproduction</div>
+          <h2 class="gallery-card__title" style="margin-bottom: 0.5rem; font-size: 1.25rem;">A Quiet Day Near Manchester</h2>
+          <p class="gallery-card__copy" style="margin-bottom: 1.5rem;">Elegant reproduction of traditional landscape art, perfectly balanced for contemporary interiors.</p>
+          <a class="button button--ghost" href="https://vanvakarnee.com/shop-art-prints/" target="_blank" rel="noreferrer" style="width: 100%; text-align: center; justify-content: center; display: flex;">View in Shop</a>
+        </article>
+
+        <article class="print-card" style="grid-column: span 4;" data-reveal data-tilt>
+          <div class="print-card__visual" style="background: url('assets/images/beach_in_normandy%20MOCKED%20IN%20ULTRAMODERN%20ART%20GALLERY.png') center/cover no-repeat; min-height: 280px; border-radius: 22px; border: 1px solid rgba(255, 255, 255, 0.08); margin-bottom: 1rem;"></div>
+          <div class="section-head__kicker">1800s Reproduction</div>
+          <h2 class="gallery-card__title" style="margin-bottom: 0.5rem; font-size: 1.25rem;">Beach in Normandy</h2>
+          <p class="gallery-card__copy" style="margin-bottom: 1.5rem;">A carefully restored 1800s reproduction capturing coastal light and historical atmosphere.</p>
+          <a class="button button--ghost" href="https://vanvakarnee.com/shop-art-prints/" target="_blank" rel="noreferrer" style="width: 100%; text-align: center; justify-content: center; display: flex;">View in Shop</a>
+        </article>
+
+        <article class="print-card" style="grid-column: span 4;" data-reveal data-tilt>
+          <div class="print-card__visual" style="background: url('assets/images/blackberries_spilling_from_tin_cup%20MOCKED%20IN%20BOOK%20NOOK.png') center/cover no-repeat; min-height: 280px; border-radius: 22px; border: 1px solid rgba(255, 255, 255, 0.08); margin-bottom: 1rem;"></div>
+          <div class="section-head__kicker">1800s Reproduction</div>
+          <h2 class="gallery-card__title" style="margin-bottom: 0.5rem; font-size: 1.25rem;">Blackberries Spilling From Tin Cup</h2>
+          <p class="gallery-card__copy" style="margin-bottom: 1.5rem;">Classic still-life reproduction, adding quiet depth to reading nooks or dining spaces.</p>
+          <a class="button button--ghost" href="https://vanvakarnee.com/shop-art-prints/" target="_blank" rel="noreferrer" style="width: 100%; text-align: center; justify-content: center; display: flex;">View in Shop</a>
+        </article>
+
+        <article class="print-card" style="grid-column: span 4;" data-reveal data-tilt>
+          <div class="print-card__visual" style="background: url('assets/images/boats_carrying_out_anchors_to_the_dutch_men_of_war%20MOCKED%20IN%20INDOOR%20GREENHOUSE.png') center/cover no-repeat; min-height: 280px; border-radius: 22px; border: 1px solid rgba(255, 255, 255, 0.08); margin-bottom: 1rem;"></div>
+          <div class="section-head__kicker">1800s Reproduction</div>
+          <h2 class="gallery-card__title" style="margin-bottom: 0.5rem; font-size: 1.25rem;">Boats Carrying Out Anchors</h2>
+          <p class="gallery-card__copy" style="margin-bottom: 1.5rem;">A dramatic maritime reproduction from the 1800s, preserved with sharp detail.</p>
+          <a class="button button--ghost" href="https://vanvakarnee.com/shop-art-prints/" target="_blank" rel="noreferrer" style="width: 100%; text-align: center; justify-content: center; display: flex;">View in Shop</a>
+        </article>
+
+        <article class="print-card" style="grid-column: span 4;" data-reveal data-tilt>
+          <div class="print-card__visual" style="background: url('assets/images/Coastal%20Haze%20ON%20FLOOR%20WINDOW.png') center/cover no-repeat; min-height: 280px; border-radius: 22px; border: 1px solid rgba(255, 255, 255, 0.08); margin-bottom: 1rem;"></div>
+          <div class="section-head__kicker">Handmade Original</div>
+          <h2 class="gallery-card__title" style="margin-bottom: 0.5rem; font-size: 1.25rem;">Coastal Haze</h2>
+          <p class="gallery-card__copy" style="margin-bottom: 1.5rem;">A handmade piece capturing the dense, atmospheric mist rolling off the coastline.</p>
+          <a class="button button--ghost" href="https://vanvakarnee.com/shop-art-prints/" target="_blank" rel="noreferrer" style="width: 100%; text-align: center; justify-content: center; display: flex;">View in Shop</a>
+        </article>
+
+        <article class="print-card" style="grid-column: span 4;" data-reveal data-tilt>
+          <div class="print-card__visual" style="background: url('assets/images/OAPLITE%20MOCKUP2.png') center/cover no-repeat; min-height: 280px; border-radius: 22px; border: 1px solid rgba(255, 255, 255, 0.08); margin-bottom: 1rem;"></div>
+          <div class="section-head__kicker">Handmade Original</div>
+          <h2 class="gallery-card__title" style="margin-bottom: 0.5rem; font-size: 1.25rem;">Oaplite Series</h2>
+          <p class="gallery-card__copy" style="margin-bottom: 1.5rem;">Abstract and structural, an original piece dealing with organic geometry.</p>
+          <a class="button button--ghost" href="https://vanvakarnee.com/shop-art-prints/" target="_blank" rel="noreferrer" style="width: 100%; text-align: center; justify-content: center; display: flex;">View in Shop</a>
+        </article>
+
+        <article class="print-card" style="grid-column: span 4;" data-reveal data-tilt>
+          <div class="print-card__visual" style="background: url('assets/images/oaplite%20wall.png') center/cover no-repeat; min-height: 280px; border-radius: 22px; border: 1px solid rgba(255, 255, 255, 0.08); margin-bottom: 1rem;"></div>
+          <div class="section-head__kicker">Handmade Original</div>
+          <h2 class="gallery-card__title" style="margin-bottom: 0.5rem; font-size: 1.25rem;">Oaplite Wall</h2>
+          <p class="gallery-card__copy" style="margin-bottom: 1.5rem;">A large-format original exploring texture, scale, and environmental interaction.</p>
+          <a class="button button--ghost" href="https://vanvakarnee.com/shop-art-prints/" target="_blank" rel="noreferrer" style="width: 100%; text-align: center; justify-content: center; display: flex;">View in Shop</a>
+        </article>
+
+        <article class="print-card" style="grid-column: span 4;" data-reveal data-tilt>
+          <div class="print-card__visual" style="background: url('assets/images/Poster_Frame_Mockup_2.png') center/cover no-repeat; min-height: 280px; border-radius: 22px; border: 1px solid rgba(255, 255, 255, 0.08); margin-bottom: 1rem;"></div>
+          <div class="section-head__kicker">Handmade Original</div>
+          <h2 class="gallery-card__title" style="margin-bottom: 0.5rem; font-size: 1.25rem;">Exhibition Print</h2>
+          <p class="gallery-card__copy" style="margin-bottom: 1.5rem;">A bold handmade gallery piece, designed to hold court in minimal spaces.</p>
+          <a class="button button--ghost" href="https://vanvakarnee.com/shop-art-prints/" target="_blank" rel="noreferrer" style="width: 100%; text-align: center; justify-content: center; display: flex;">View in Shop</a>
+        </article>
+
+        <article class="print-card" style="grid-column: span 4;" data-reveal data-tilt>
+          <div class="print-card__visual" style="background: url('assets/images/Shoreline%20MOCKED%20ON%20DODGEY%20FLOORS.png') center/cover no-repeat; min-height: 280px; border-radius: 22px; border: 1px solid rgba(255, 255, 255, 0.08); margin-bottom: 1rem;"></div>
+          <div class="section-head__kicker">Handmade Original</div>
+          <h2 class="gallery-card__title" style="margin-bottom: 0.5rem; font-size: 1.25rem;">Shoreline</h2>
+          <p class="gallery-card__copy" style="margin-bottom: 1.5rem;">Original handcrafted print focusing on the shifting tension between water and earth.</p>
+          <a class="button button--ghost" href="https://vanvakarnee.com/shop-art-prints/" target="_blank" rel="noreferrer" style="width: 100%; text-align: center; justify-content: center; display: flex;">View in Shop</a>
         </article>
       </div>
     </section>
@@ -97,8 +173,8 @@
       <div class="shell section-lead">
         <div class="detail-panel" data-reveal>
           <div class="section-head__kicker">Live store</div>
-          <h2 class="panel-title">The portfolio now points somewhere tangible.</h2>
-          <p>By connecting the image work to VanVakarnee, the site shows not only photography and direction but also a real product destination where the work can live physically.</p>
+          <h2 class="panel-title">Bringing images into physical spaces.</h2>
+          <p>VanVakarnee provides a direct connection from digital photography to physical products, offering art prints and real-world representations of the work.</p>
         </div>
         <div class="detail-panel" data-reveal>
           <div class="section-head__kicker">Visit</div>

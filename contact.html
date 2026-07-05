@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact | Portfolio</title>
+  <title>Contact | Alexander Foster</title>
   <meta name="description" content="Contact page for book, app, photography, and print enquiries.">
   <script>document.documentElement.classList.add('js');</script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,6 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollTrigger.min.js"></script>
+  <script defer src="https://unpkg.com/lenis@1.3.15/dist/lenis.min.js"></script>
   <link rel="stylesheet" href="assets/css/styles.css">
   <script defer src="assets/js/site.js"></script>
 </head>
@@ -28,10 +29,10 @@
   <header class="site-header" id="site-header">
     <div class="shell site-header__inner">
       <a class="brand" href="index.html" data-transition-label="Home">
-        <span class="brand__monogram">CV</span>
+        <span class="brand__monogram">AF</span>
         <span class="brand__text">
-          <span class="brand__name">Portfolio</span>
-          <span class="brand__label">Books / Apps / Tasmania</span>
+          <span class="brand__name">Alexander Foster</span>
+          <span class="brand__label">Writing / Apps / Tasmania</span>
         </span>
       </a>
       <nav class="site-nav" aria-label="Primary">
@@ -55,17 +56,41 @@
               <h1 class="contact-title" data-reveal>Let's build the next chapter with the same level of drama.</h1>
             </div>
           </div>
-          <p class="page-hero__copy" data-reveal>This portfolio now brings together writing, product ideas, Tasmania photography, and print direction. If the next move is a collaboration, a commission, a feature, or a product conversation, this is the page that turns the portfolio into an actual lead.</p>
+          <p class="page-hero__copy" data-reveal>Bringing together writing, product ideas, Tasmania photography, and print direction. Reach out for collaborations, commissions, features, or product conversations.</p>
           <div class="tag-row" data-reveal>
             <span class="tag">Books and author presentation</span>
             <span class="tag">App concepts and product direction</span>
             <span class="tag">Photography and print enquiries</span>
           </div>
-          <div class="button-row" data-reveal>
-            <a class="button button--primary" href="mailto:replace-with-your-email@example.com">Email for enquiries</a>
+          <div class="button-row button-row--contact" data-reveal>
+            <a class="paper-plane-button" href="mailto:replace-with-your-email@example.com">
+              <span class="paper-plane-button__label paper-plane-button__label--default">Launch email</span>
+              <span class="paper-plane-button__label paper-plane-button__label--sent">Mail ready</span>
+              <span class="paper-plane-button__left" aria-hidden="true"></span>
+              <span class="paper-plane-button__right" aria-hidden="true"></span>
+            </a>
             <a class="button button--ghost" href="https://vanvakarnee.com" target="_blank" rel="noreferrer">Visit VanVakarnee.com</a>
           </div>
-          <p class="list-note" data-reveal>Replace the placeholder email link with your preferred address before publishing.</p>
+          <div class="contact-console" data-reveal>
+            <div class="micro-label">Studio line</div>
+            <div class="contact-console__row">
+              <label class="studio-rocker" data-rocker>
+                <input class="studio-rocker__input" type="checkbox" checked aria-label="Studio availability">
+                <span class="studio-rocker__shell" aria-hidden="true">
+                  <span class="studio-rocker__label studio-rocker__label--off">Hold</span>
+                  <span class="studio-rocker__core"></span>
+                  <span class="studio-rocker__thumb"></span>
+                  <span class="studio-rocker__label studio-rocker__label--on">Live</span>
+                  <span class="studio-rocker__light"></span>
+                </span>
+              </label>
+              <div class="contact-console__copy">
+                <strong data-rocker-heading>Studio line live</strong>
+                <p data-rocker-status>Available for books, apps, photography, and print conversations.</p>
+              </div>
+            </div>
+          </div>
+
         </div>
 
         <div class="hero__visual" data-reveal>
@@ -74,7 +99,7 @@
           <div class="floating-panel floating-panel--north" data-parallax="-18">
             <div class="micro-label">Best fit</div>
             <strong>Creative direction, product storytelling, and visually-led launches.</strong>
-            <p>Use this page as the conversion point for books, apps, prints, or cross-discipline collaborations.</p>
+            <p>Reach out for books, apps, prints, or cross-discipline collaborations.</p>
           </div>
           <div class="hero-stack" data-parallax="30">
             <div class="hero-stack__screen">
@@ -100,7 +125,7 @@
           <div class="floating-panel floating-panel--south" data-parallax="20">
             <div class="micro-label">Response path</div>
             <strong>Email first, then route to the right section.</strong>
-            <p>The page is designed to make outreach feel like a premium handoff instead of a dead-end contact form.</p>
+            <p>Your enquiry goes straight to my inbox, no forms attached.</p>
           </div>
         </div>
       </div>
@@ -135,7 +160,7 @@
         <article class="contact-card" data-reveal data-tilt>
           <div class="section-head__kicker">Fastest route</div>
           <h2 class="contact-card__title">Use email for direct enquiries.</h2>
-          <p class="contact-copy">If the ask is specific, lead with the project type, timeline, and what part of the portfolio you are responding to. That makes the conversation faster and keeps this site working like a real business card instead of a static gallery.</p>
+          <p class="contact-copy">If the ask is specific, lead with the project type, timeline, and what part of the portfolio you are responding to. This ensures a faster response and a more productive conversation.</p>
           <div class="tag-row">
             <a class="button button--primary" href="mailto:replace-with-your-email@example.com">Start an email</a>
             <a class="button button--ghost" href="index.html" data-transition-label="Home">Back to home</a>

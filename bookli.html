@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BOOKLI | Alexander Foster</title>
+  <meta name="description" content="BOOKLI case page for Alexander Foster's AI-assisted publishing editor.">
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollTrigger.min.js"></script>
+  <script defer src="https://unpkg.com/lenis@1.3.15/dist/lenis.min.js"></script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script defer src="assets/js/site.js"></script>
+</head>
+<body data-page="apps">
+  <div class="noise" aria-hidden="true"></div>
+  <div class="ambient ambient--one" aria-hidden="true"></div>
+  <div class="ambient ambient--two" aria-hidden="true"></div>
+  <div class="ambient ambient--three" aria-hidden="true"></div>
+  <div class="page-transition" id="page-transition" aria-hidden="true"><span>BOOKLI</span></div>
+  <div class="progress-line" id="progress-line" aria-hidden="true"></div>
+  <div class="cursor-dot" id="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" id="cursor-ring" aria-hidden="true"></div>
+  <div class="cursor-blob" id="cursor-blob" aria-hidden="true"></div>
+
+  <header class="site-header" id="site-header">
+    <div class="shell site-header__inner">
+      <a class="brand" href="index.html" data-transition-label="Home">
+        <span class="brand__monogram">AF</span>
+        <span class="brand__text">
+          <span class="brand__name">Alexander Foster</span>
+          <span class="brand__label">Writing / Apps / Tasmania</span>
+        </span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="index.html" data-nav="home">Home</a>
+        <a href="writing.html" data-nav="writing">Writing</a>
+        <a href="apps.html" data-nav="apps">Apps</a>
+        <a href="photography.html" data-nav="photography">Photography</a>
+        <a href="prints.html" data-nav="prints">Prints</a>
+        <a href="contact.html" data-nav="contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-shell">
+    <section class="page-hero">
+      <div class="shell book-detail-hero__grid">
+        <div>
+          <div class="page-hero__header">
+            <div>
+              <div class="section-head__kicker" data-reveal>App page / three</div>
+              <h1 class="book-detail-hero__title" data-reveal>BOOKLI</h1>
+            </div>
+          </div>
+          <p class="page-hero__copy" data-reveal>BOOKLI is a lightweight, modern alternative to Word built for writers who want assistance without losing flow. Highlight a passage, send it to Claude or ChatGPT for repair, surface likely issues, and auto-format the manuscript for publishing without bouncing across tools.</p>
+          <div class="tag-row" data-reveal>
+            <span class="tag">Writing tool</span>
+            <span class="tag">Claude</span>
+            <span class="tag">ChatGPT</span>
+            <span class="tag">Publishing</span>
+          </div>
+          <div class="book-detail-hero__actions" data-reveal>
+            <a class="button button--primary" href="apps.html" data-transition-label="Apps">Back to apps</a>
+            <a class="button button--ghost" href="writing.html" data-transition-label="Writing">See books</a>
+          </div>
+        </div>
+        <div class="app-detail-stage app-detail-stage--bookli" data-reveal>
+          <span class="app-detail-stage__beam" aria-hidden="true"></span>
+          <span class="app-detail-stage__grid" aria-hidden="true"></span>
+          <span class="app-detail-stage__orbit" aria-hidden="true"></span>
+          <span class="app-detail-stage__orbit--inner" aria-hidden="true"></span>
+          <span class="app-detail-stage__badge app-detail-stage__badge--north">Claude / ChatGPT</span>
+          <span class="app-detail-stage__badge app-detail-stage__badge--south">Highlight / fix / publish</span>
+          <div class="app-detail-stage__device">
+            <div class="editor-mock">
+              <div class="editor-mock__toolbar">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="editor-mock__workspace">
+                <div class="editor-mock__chip">Highlight to fix</div>
+                <div class="editor-mock__sheet">
+                  <div class="editor-mock__line"></div>
+                  <div class="editor-mock__line mid"></div>
+                  <div class="editor-mock__line"></div>
+                  <div class="editor-mock__highlight"></div>
+                  <div class="editor-mock__line"></div>
+                  <div class="editor-mock__line short"></div>
+                </div>
+                <div class="editor-mock__suggestion"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="marquee-band">
+      <div class="marquee-track">
+        <span><b>BOOKLI</b> HIGHLIGHT TO FIX <b>CLAUDE</b> <b>CHATGPT</b> EDIT / SUGGEST / FORMAT / PUBLISH</span>
+        <span><b>BOOKLI</b> HIGHLIGHT TO FIX <b>CLAUDE</b> <b>CHATGPT</b> EDIT / SUGGEST / FORMAT / PUBLISH</span>
+      </div>
+    </div>
+
+    <section class="section">
+      <div class="shell detail-grid">
+        <div class="detail-panel" data-reveal>
+          <strong>Product idea</strong>
+          <p>BOOKLI is designed for writers who want a cleaner, lighter, more intuitive editing space than Word without sacrificing the ability to finish a manuscript properly.</p>
+        </div>
+        <div class="detail-panel" data-reveal>
+          <strong>System</strong>
+          <p>The core loop is direct: highlight, ask for help, review the suggestion, and keep moving. Claude and ChatGPT become embedded repair tools instead of separate destinations.</p>
+        </div>
+        <div class="detail-panel" data-reveal>
+          <strong>Why it matters here</strong>
+          <p>BOOKLI connects the app work back to the books. It proves the portfolio is not just about writing finished titles, but also about designing the tools that shape them.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="shell section-lead">
+        <div class="detail-panel" data-reveal>
+          <div class="section-head__kicker">Positioning line</div>
+          <div class="quote-panel">A writing workspace built to help creatives move faster, stay in flow, and turn rough text into publishable work.</div>
+        </div>
+        <div class="detail-panel" data-reveal>
+          <div class="section-head__kicker">Core moves</div>
+          <div class="list-grid">
+            <div class="list-grid__item">
+              <strong>Highlight-to-fix interaction</strong>
+              <p>The moment of friction becomes the start of the tool, not a detour away from it.</p>
+            </div>
+            <div class="list-grid__item">
+              <strong>Issue suggestions</strong>
+              <p>The app aims at clarity, structure, and voice instead of just surface-level corrections.</p>
+            </div>
+            <div class="list-grid__item">
+              <strong>Publishing output</strong>
+              <p>Formatting for publish keeps BOOKLI pointed at finishing work, not only drafting it.</p>
+            </div>
+          </div>
+          <div class="book-detail-hero__actions">
+            <a class="button button--primary" href="apps.html" data-transition-label="Apps">Back to apps</a>
+            <a class="button button--ghost" href="writing.html" data-transition-label="Writing">See the books</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell site-footer__inner">
+      <span>Alexander Foster / BOOKLI case page</span>
+      <div class="site-footer__links">
+        <a href="apps.html">Apps</a>
+        <a href="verve.html">VERVE</a>
+        <a href="cheriflix.html">CHERIFLIX</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
