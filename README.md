@@ -2,6 +2,9 @@
 
 Static multi-page portfolio rebuilt into a darker, motion-heavy presentation for GitHub Pages.
 
+If you'd like to preview the site please click the link!
+https://alexanderfosterdesigns.github.io/portfolio/
+
 ## Main pages
 
 - `index.html` - animated landing page with interactive bookshelf and book-open transition
